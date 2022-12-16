@@ -1,2 +1,9 @@
-# react-design-system-icons
-The icons library for our React design system
+# LifeSG React Icons
+
+A React icon library for LifeSG and BookingSG related products.
+
+## Installation
+
+```
+npm i @lifesg/react-icons
+```
