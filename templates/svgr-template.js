@@ -12,6 +12,8 @@ const template = (variables, { tpl }) => {
         export const ${modifiedComponentName} = (${variables.props}) => (
             ${variables.jsx}
         );
+
+        ${modifiedComponentName}.displayName = "${modifiedComponentName}";
     `;
 };
 
