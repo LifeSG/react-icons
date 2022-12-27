@@ -11,7 +11,7 @@
         "rollup": "rm -rf dist && rollup -c",
         "post:build": "node ./scripts/post-build.js",
         "publish-lib": "npm publish ./dist",
-        "generate-icons": "svgr --config-file .svgrrc.js assets/icons",
+        "generate-icons": "node ./scripts/generate-icons.js",
         "start": "rollup -c -w",
         "test": "jest --coverage",
         "prepare": "(test -d ./.git && npx husky install) || true",
