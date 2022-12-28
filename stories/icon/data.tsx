@@ -1,5 +1,12 @@
 import React from "react";
-import { ArrowLeftIcon } from "../../src";
+import {
+    ArrowDownCircleFillIcon,
+    ArrowDownCircleIcon,
+    ArrowDownIcon,
+} from "../../src";
 
-// export const ICONS: JSX.Element[] = [<ArrowLeftIcon />];
-export const ICONS: JSX.Element[] = [];
+export const ICONS: JSX.Element[] = [
+    <ArrowDownCircleFillIcon key="ArrowDownCircleFillIcon" />,
+    <ArrowDownCircleIcon key="ArrowDownCircleIcon" />,
+    <ArrowDownIcon key="ArrowDownIcon" />,
+];

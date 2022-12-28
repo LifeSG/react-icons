@@ -89,13 +89,15 @@ const Clickable = styled.div`
 
     svg {
         transition: all ease-in-out 300ms;
+        height: 1.5rem;
+        width: 1.5rem;
     }
 
     :hover {
         background: ${Colors.Neutral[7]};
         svg {
-            height: 1.5rem;
-            width: 1.5rem;
+            height: 2rem;
+            width: 2rem;
         }
     }
 `;
