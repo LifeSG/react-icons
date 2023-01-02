@@ -2,7 +2,7 @@ const template = (variables, { tpl }) => {
     const modifiedComponentName = `${variables.componentName.replace(
         "Svg",
         ""
-    )}Icon`;
+    )}`;
 
     return tpl`
         ${variables.imports};

@@ -5,6 +5,7 @@ const { transform } = require("@svgr/core");
 const packagePath = process.cwd();
 const assetPath = join(packagePath, "./assets");
 const destinationPath = join(packagePath, "./src");
+const storyPath = join(packagePath, "./stories/icon");
 
 // =============================================================================
 // HELPERS
@@ -15,8 +16,8 @@ function format(text) {
 
 function getComponentName(fileName) {
     // Converts svg file name to component name
-    // e.g. arrow-left.svg > ArrowLeft
-    return fileName.replace(".svg", "").replace(/(^\w|-\w)/g, format);
+    // e.g. arrow-left.svg > ArrowLeftIcon
+    return `${fileName.replace(".svg", "").replace(/(^\w|-\w)/g, format)}Icon`;
 }
 
 function getComponentFileName(fileName) {
