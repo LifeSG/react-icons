@@ -5,9 +5,8 @@ import typescript from "rollup-plugin-typescript2";
 import peerDepsExternal from "rollup-plugin-peer-deps-external";
 import postcss from "rollup-plugin-postcss";
 import { terser } from "rollup-plugin-terser";
-import generatePackageJson from "rollup-plugin-generate-package-json";
 import pkg from "./package.json";
-import { getFolders } from "./scripts/build-util";
+import { getFiles } from "./scripts/build-util";
 
 const plugins = [
     peerDepsExternal(), // Add the externals for me. [react, react-dom, styled-components]
@@ -36,30 +35,24 @@ const plugins = [
     terser(), // Helps remove comments, whitespace or logging codes
 ];
 
-const subfolderPlugins = (folderName) => [
-    ...plugins,
-    generatePackageJson({
-        baseContents: {
-            name: `${pkg.name}/${folderName}`,
-            private: true,
-            main: "../cjs/index.js", // point to cjs format entry point
-            module: "./index.js", // point to esm format entry point of indiv components
-            types: "./index.d.ts", // point to esm format entry point of indiv components
-        },
-    }),
-];
+const individualFileBuildConfigs = getFiles("./src").map((file) => {
+    const fileNameWithNoExtension = file.replace(".tsx", "");
 
-const folderBuildConfigs = getFolders("./src").map((folder) => {
     return {
-        input: `src/${folder}/index.ts`,
-        output: {
-            file: `dist/${folder}/index.js`,
-            sourcemap: true,
-            exports: "named",
-            format: "esm",
-        },
-        plugins: subfolderPlugins(folder),
-        external: ["react", "react-dom", "styled-components"],
+        input: `src/${file}`,
+        output: [
+            {
+                file: `dist/${fileNameWithNoExtension}.esm.js`,
+                exports: "named",
+                format: "esm",
+            },
+            {
+                file: `dist/${fileNameWithNoExtension}.js`,
+                exports: "named",
+                format: "cjs",
+            },
+        ],
+        plugins,
     };
 });
 
@@ -83,5 +76,5 @@ export default [
         plugins,
         external: ["react", "react-dom", "styled-components"],
     },
-    ...folderBuildConfigs,
+    ...individualFileBuildConfigs,
 ];

@@ -1,14 +1,6 @@
-const fs = require("fs");
-const path = require("path");
-export const getFolders = (entry) => {
-    const dirs = fs.readdirSync(entry);
+const { readdirSync } = require("fs-extra");
 
-    // folders without an index.ts
-    const dirsToIgnore = ["custom-types", "shared", "spec", "util"];
-
-    const dirsToUse = dirs
-        .filter((dirName) => path.extname(dirName) === "") // exclude non-folders
-        .filter((dirName) => dirsToIgnore.indexOf(dirName) === -1);
-
-    return dirsToUse;
-};
+export function getFiles(dir) {
+    const files = readdirSync(dir);
+    return files;
+}
