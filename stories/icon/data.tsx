@@ -2,6 +2,8 @@ import React from "react";
 import {
     ArrowDownCircleFillIcon,
     ArrowDownCircleIcon,
+    ArrowDownCloudFillIcon,
+    ArrowDownCloudIcon,
     ArrowDownIcon,
     ArrowLeftCircleFillIcon,
     ArrowLeftCircleIcon,
@@ -15,16 +17,56 @@ import {
     ArrowRightUpIcon,
     ArrowUpCircleFillIcon,
     ArrowUpCircleIcon,
+    ArrowUpCloudFillIcon,
+    ArrowUpCloudIcon,
     ArrowUpIcon,
+    CaretDownIcon,
+    CaretLeftIcon,
+    CaretRightIcon,
+    CaretUpIcon,
+    Chevron2LeftIcon,
+    Chevron2RightIcon,
     ChevronDownIcon,
     ChevronLeftIcon,
     ChevronLineLeftIcon,
     ChevronLineRightIcon,
     ChevronRightIcon,
     ChevronUpIcon,
+    CircleIcon,
+    CloudFillIcon,
+    CloudIcon,
+    CrossCircleFillIcon,
+    CrossCircleIcon,
+    DotCircleIcon,
+    EllipsisHorizontalIcon,
+    EllipsisVerticalIcon,
+    ExclamationCircleFillIcon,
+    ExclamationCircleIcon,
+    ExclamationTriangleFillIcon,
+    ExclamationTriangleIcon,
+    ICircleFillIcon,
+    ICircleIcon,
+    MinusCircleFillIcon,
+    MinusCircleIcon,
+    PlusCircleFillIcon,
+    PlusCircleIcon,
+    QuestionmarkCircleFillIcon,
+    QuestionmarkCircleIcon,
+    Square2x2FillIcon,
+    Square2x2Icon,
+    SquareIcon,
+    TickCircleFillIcon,
+    TickCircleIcon,
+    TickCloudFillIcon,
+    TickCloudIcon,
+    TickSquareFillIcon,
+    TickSquareIcon,
+    TriangleForwardFillIcon,
+    TriangleForwardIcon,
 } from "../../src";
 
 export const ICONS: JSX.Element[] = [
+    // Arrow
     <ArrowDownIcon key="ArrowDownIcon" />,
     <ArrowLeftDownIcon key="ArrowLeftDownIcon" />,
     <ArrowLeftUpIcon key="ArrowLeftUpIcon" />,
@@ -33,7 +75,7 @@ export const ICONS: JSX.Element[] = [
     <ArrowRightUpIcon key="ArrowRightUpIcon" />,
     <ArrowRightIcon key="ArrowRightIcon" />,
     <ArrowUpIcon key="ArrowUpIcon" />,
-    // Arrow Down Circle
+    // Arrow Circle
     <ArrowDownCircleIcon key="ArrowDownCircleIcon" />,
     <ArrowLeftCircleIcon key="ArrowLeftCircleIcon" />,
     <ArrowRightCircleIcon key="ArrowRightCircleIcon" />,
@@ -47,7 +89,61 @@ export const ICONS: JSX.Element[] = [
     <ChevronLeftIcon key="ChevronLeftIcon" />,
     <ChevronRightIcon key="ChevronRightIcon" />,
     <ChevronUpIcon key="ChevronUpIcon" />,
-    // Chevron Line
+    // Chevron
     <ChevronLineLeftIcon key="ChevronLineLeftIcon" />,
     <ChevronLineRightIcon key="ChevronLineRightIcon" />,
+    <Chevron2LeftIcon key="Chevron2LeftIcon" />,
+    <Chevron2RightIcon key="Chevron2RightIcon" />,
+    // Caret
+    <CaretLeftIcon key="CaretLeftIcon" />,
+    <CaretRightIcon key="CaretRightIcon" />,
+    <CaretUpIcon key="CaretUpIcon" />,
+    <CaretDownIcon key="CaretDownIcon" />,
+    // Triangle
+    <TriangleForwardIcon key="TriangleForwardIcon" />,
+    <TriangleForwardFillIcon key="TriangleForwardFillIcon" />,
+    // Ellipsis
+    <EllipsisHorizontalIcon key="EllipsisHorizontalIcon" />,
+    <EllipsisVerticalIcon key="EllipsisVerticalIcon" />,
+    // Plus
+    <PlusCircleIcon key="PlusCircleIcon" />,
+    <PlusCircleFillIcon key="PlusCircleFillIcon" />,
+    // Minus
+    <MinusCircleIcon key="MinusCircleIcon" />,
+    <MinusCircleFillIcon key="MinusCircleFillIcon" />,
+    // Cross
+    <CrossCircleIcon key="CrossCircleIcon" />,
+    <CrossCircleFillIcon key="CrossCircleFillIcon" />,
+    // Tick
+    <TickCircleIcon key="TickCircleIcon" />,
+    <TickCircleFillIcon key="TickCircleFillIcon" />,
+    // Exclamation
+    <ExclamationCircleIcon key="ExclamationCircleIcon" />,
+    <ExclamationCircleFillIcon key="ExclamationCircleFillIcon" />,
+    <ExclamationTriangleIcon key="ExclamationTriangleIcon" />,
+    <ExclamationTriangleFillIcon key="ExclamationTriangleFillIcon" />,
+    // QuestionMark
+    <QuestionmarkCircleIcon key="QuestionmarkCircleIcon" />,
+    <QuestionmarkCircleFillIcon key="QuestionmarkCircleFillIcon" />,
+    // Circle
+    <CircleIcon key="CircleIcon" />,
+    <DotCircleIcon key="DotCircleIcon" />,
+    // I-Circle
+    <ICircleIcon key="ICircleIcon" />,
+    <ICircleFillIcon key="ICircleFillIcon" />,
+    // Square
+    <SquareIcon key="SquareIcon" />,
+    <TickSquareIcon key="TickSquareIcon" />,
+    <TickSquareFillIcon key="TickSquareFillIcon" />,
+    <Square2x2Icon key="Square2x2Icon" />,
+    <Square2x2FillIcon key="Square2x2FillIcon" />,
+    // Cloud
+    <CloudIcon key="CloudIcon" />,
+    <CloudFillIcon key="CloudFillIcon" />,
+    <ArrowUpCloudIcon key="ArrowUpCloudIcon" />,
+    <ArrowUpCloudFillIcon key="ArrowUpCloudFillIcon" />,
+    <ArrowDownCloudIcon key="ArrowDownCloudIcon" />,
+    <ArrowDownCloudFillIcon key="ArrowDownCloudFillIcon" />,
+    <TickCloudIcon key="TickCloudIcon" />,
+    <TickCloudFillIcon key="TickCloudFillIcon" />,
 ];
