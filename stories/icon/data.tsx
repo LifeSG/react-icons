@@ -37,6 +37,8 @@ import {
     CloudIcon,
     CrossCircleFillIcon,
     CrossCircleIcon,
+    CrossIcon,
+    DollarIcon,
     DotCircleIcon,
     EllipsisHorizontalIcon,
     EllipsisVerticalIcon,
@@ -48,8 +50,10 @@ import {
     ICircleIcon,
     MinusCircleFillIcon,
     MinusCircleIcon,
+    MinusIcon,
     PlusCircleFillIcon,
     PlusCircleIcon,
+    PlusIcon,
     QuestionmarkCircleFillIcon,
     QuestionmarkCircleIcon,
     Square2x2FillIcon,
@@ -59,6 +63,7 @@ import {
     TickCircleIcon,
     TickCloudFillIcon,
     TickCloudIcon,
+    TickIcon,
     TickSquareFillIcon,
     TickSquareIcon,
     TriangleForwardFillIcon,
@@ -106,15 +111,19 @@ export const ICONS: JSX.Element[] = [
     <EllipsisHorizontalIcon key="EllipsisHorizontalIcon" />,
     <EllipsisVerticalIcon key="EllipsisVerticalIcon" />,
     // Plus
+    <PlusIcon key="PlusIcon" />,
     <PlusCircleIcon key="PlusCircleIcon" />,
     <PlusCircleFillIcon key="PlusCircleFillIcon" />,
     // Minus
+    <MinusIcon key="MinusIcon" />,
     <MinusCircleIcon key="MinusCircleIcon" />,
     <MinusCircleFillIcon key="MinusCircleFillIcon" />,
     // Cross
+    <CrossIcon key="CrossIcon" />,
     <CrossCircleIcon key="CrossCircleIcon" />,
     <CrossCircleFillIcon key="CrossCircleFillIcon" />,
     // Tick
+    <TickIcon key="TickIcon" />,
     <TickCircleIcon key="TickCircleIcon" />,
     <TickCircleFillIcon key="TickCircleFillIcon" />,
     // Exclamation
@@ -146,4 +155,6 @@ export const ICONS: JSX.Element[] = [
     <ArrowDownCloudFillIcon key="ArrowDownCloudFillIcon" />,
     <TickCloudIcon key="TickCloudIcon" />,
     <TickCloudFillIcon key="TickCloudFillIcon" />,
+    // Dollar
+    <DollarIcon key="DollarIcon" />,
 ];
