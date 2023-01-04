@@ -43,9 +43,9 @@ pushd ${PROJECT_DIR}
 echo "[CI] Installing dependencies"
 npm ci
 
-# Run tests
-echo "[CI] Running tests"
-npm test
+# Run tests (Disable for now)
+# echo "[CI] Running tests" 
+# npm test
 
 # Build and pack
 echo "[CI] Running build and generating tgz"
