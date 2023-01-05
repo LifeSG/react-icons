@@ -2,6 +2,10 @@ import React from "react";
 import {
     AlbumFillIcon,
     AlbumIcon,
+    AlignCenterIcon,
+    AlignJustifyIcon,
+    AlignLeftIcon,
+    AlignRightIcon,
     ArrowDownCircleFillIcon,
     ArrowDownCircleIcon,
     ArrowDownCloudFillIcon,
@@ -66,6 +70,7 @@ import {
     DocPencilIcon,
     DollarIcon,
     DotCircleIcon,
+    DownloadIcon,
     EllipsisHorizontalIcon,
     EllipsisVerticalIcon,
     EnvelopeFillIcon,
@@ -76,10 +81,12 @@ import {
     ExclamationCircleIcon,
     ExclamationTriangleFillIcon,
     ExclamationTriangleIcon,
+    ExternalIcon,
     EyeFillIcon,
     EyeIcon,
     EyeSlashFillIcon,
     EyeSlashIcon,
+    FilterIcon,
     GearFillIcon,
     GearIcon,
     GlobeIcon,
@@ -90,8 +97,12 @@ import {
     LanguageIcon,
     LightbulbFillIcon,
     LightbulbIcon,
+    LinkIcon,
+    ListIcon,
     LockFillIcon,
     LockIcon,
+    LoginIcon,
+    LogoutIcon,
     MagnifierIcon,
     MagnifierMinusIcon,
     MagnifierPlusIcon,
@@ -103,6 +114,7 @@ import {
     MinusIcon,
     NavigationFillIcon,
     NavigationIcon,
+    NonRecurringIcon,
     PencilFillIcon,
     PencilIcon,
     PencilStrokeFillIcon,
@@ -135,6 +147,14 @@ import {
     QrIcon,
     QuestionmarkCircleFillIcon,
     QuestionmarkCircleIcon,
+    RecurringIcon,
+    RefreshIcon,
+    ReplayIcon,
+    RetryIcon,
+    ReturnIcon,
+    ShareIcon,
+    SortAscendingIcon,
+    SortDescendingIcon,
     Square2x2FillIcon,
     Square2x2Icon,
     SquareIcon,
@@ -157,6 +177,7 @@ import {
     ToggleOnIcon,
     TriangleForwardFillIcon,
     TriangleForwardIcon,
+    UploadIcon,
 } from "../../src";
 
 export const ICONS: JSX.Element[] = [
@@ -371,4 +392,46 @@ export const ICONS: JSX.Element[] = [
     <GlobeIcon key="GlobeIcon" />,
     // Qr
     <QrIcon key="QrIcon" />,
+
+    // =============================================================================
+    // MISC
+    // =============================================================================
+    // Align
+    <AlignLeftIcon key="AlignLeftIcon" />,
+    <AlignCenterIcon key="AlignCenterIcon" />,
+    <AlignRightIcon key="AlignRightIcon" />,
+    <AlignJustifyIcon key="AlignJustifyIcon" />,
+    // Sort
+    <SortDescendingIcon key="SortDescendingIcon" />,
+    <SortAscendingIcon key="SortAscendingIcon" />,
+    // List
+    <ListIcon key="ListIcon" />,
+    // Filter
+    <FilterIcon key="FilterIcon" />,
+    // Link
+    <LinkIcon key="LinkIcon" />,
+    // External
+    <ExternalIcon key="ExternalIcon" />,
+    // Logout
+    <LogoutIcon key="LogoutIcon" />,
+    // Login
+    <LoginIcon key="LoginIcon" />,
+    // Upload
+    <UploadIcon key="UploadIcon" />,
+    // Download
+    <DownloadIcon key="DownloadIcon" />,
+    // Share
+    <ShareIcon key="ShareIcon" />,
+    // Recurring
+    <RecurringIcon key="RecurringIcon" />,
+    // NonRecurring
+    <NonRecurringIcon key="NonRecurringIcon" />,
+    // Refresh
+    <RefreshIcon key="RefreshIcon" />,
+    // Replay
+    <ReplayIcon key="ReplayIcon" />,
+    // Retry
+    <RetryIcon key="RetryIcon" />,
+    // Return
+    <ReturnIcon key="ReturnIcon" />,
 ];
