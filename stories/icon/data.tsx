@@ -139,9 +139,12 @@ import {
     PhoneIcon,
     PinFillIcon,
     PinIcon,
+    PlaceholderIcon,
+    PlaceholderImageIcon,
     PlusCircleFillIcon,
     PlusCircleIcon,
     PlusIcon,
+    PointIcon,
     PrinterFillIcon,
     PrinterIcon,
     QrIcon,
@@ -434,4 +437,13 @@ export const ICONS: JSX.Element[] = [
     <RetryIcon key="RetryIcon" />,
     // Return
     <ReturnIcon key="ReturnIcon" />,
+
+    // =============================================================================
+    // FIGMA EXCLUSIVE
+    // =============================================================================
+    // Point
+    <PointIcon key="PointIcon" />,
+    // Placeholder
+    <PlaceholderImageIcon key="PlaceholderImageIcon" />,
+    <PlaceholderIcon key="PlaceholderIcon" />,
 ];
