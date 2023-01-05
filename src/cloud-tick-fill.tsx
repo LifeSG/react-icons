@@ -1,6 +1,6 @@
 import * as React from "react";
 import { SVGProps } from "react";
-export const TickCloudFillIcon = (props: SVGProps<SVGSVGElement>) => (
+export const CloudTickFillIcon = (props: SVGProps<SVGSVGElement>) => (
     <svg
         width="1em"
         height="1em"
@@ -15,4 +15,4 @@ export const TickCloudFillIcon = (props: SVGProps<SVGSVGElement>) => (
         />
     </svg>
 );
-TickCloudFillIcon.displayName = "TickCloudFillIcon";
+CloudTickFillIcon.displayName = "CloudTickFillIcon";

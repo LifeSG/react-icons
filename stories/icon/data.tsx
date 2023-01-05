@@ -8,8 +8,6 @@ import {
     AlignRightIcon,
     ArrowDownCircleFillIcon,
     ArrowDownCircleIcon,
-    ArrowDownCloudFillIcon,
-    ArrowDownCloudIcon,
     ArrowDownIcon,
     ArrowLeftCircleFillIcon,
     ArrowLeftCircleIcon,
@@ -23,8 +21,6 @@ import {
     ArrowRightUpIcon,
     ArrowUpCircleFillIcon,
     ArrowUpCircleIcon,
-    ArrowUpCloudFillIcon,
-    ArrowUpCloudIcon,
     ArrowUpIcon,
     BinFillIcon,
     BinIcon,
@@ -56,11 +52,18 @@ import {
     ChevronLineRightIcon,
     ChevronRightIcon,
     ChevronUpIcon,
+    CircleDotIcon,
     CircleIcon,
     ClockFillIcon,
     ClockIcon,
+    CloudArrowDownFillIcon,
+    CloudArrowDownIcon,
+    CloudArrowUpFillIcon,
+    CloudArrowUpIcon,
     CloudFillIcon,
     CloudIcon,
+    CloudTickFillIcon,
+    CloudTickIcon,
     CrossCircleFillIcon,
     CrossCircleIcon,
     CrossIcon,
@@ -69,7 +72,6 @@ import {
     DocPencilFillIcon,
     DocPencilIcon,
     DollarIcon,
-    DotCircleIcon,
     DownloadIcon,
     EllipsisHorizontalIcon,
     EllipsisVerticalIcon,
@@ -161,17 +163,15 @@ import {
     Square2x2FillIcon,
     Square2x2Icon,
     SquareIcon,
+    SquareTickFillIcon,
+    SquareTickIcon,
     StarFillIcon,
     StarIcon,
     TextFillIcon,
     TextIcon,
     TickCircleFillIcon,
     TickCircleIcon,
-    TickCloudFillIcon,
-    TickCloudIcon,
     TickIcon,
-    TickSquareFillIcon,
-    TickSquareIcon,
     TicketFillIcon,
     TicketIcon,
     ToggleOffFillIcon,
@@ -184,9 +184,14 @@ import {
 } from "../../src";
 
 export const ICONS: JSX.Element[] = [
-    // =============================================================================
-    // SHAPES
-    // =============================================================================
+    // Album
+    <AlbumIcon key="AlbumIcon" />,
+    <AlbumFillIcon key="AlbumFillIcon" />,
+    // Align
+    <AlignLeftIcon key="AlignLeftIcon" />,
+    <AlignCenterIcon key="AlignCenterIcon" />,
+    <AlignRightIcon key="AlignRightIcon" />,
+    <AlignJustifyIcon key="AlignJustifyIcon" />,
     // Arrow
     <ArrowDownIcon key="ArrowDownIcon" />,
     <ArrowLeftDownIcon key="ArrowLeftDownIcon" />,
@@ -205,146 +210,142 @@ export const ICONS: JSX.Element[] = [
     <ArrowLeftCircleFillIcon key="ArrowLeftCircleFillIcon" />,
     <ArrowRightCircleFillIcon key="ArrowRightCircleFillIcon" />,
     <ArrowUpCircleFillIcon key="ArrowUpCircleFillIcon" />,
-    // Chevron
-    <ChevronDownIcon key="ChevronDownIcon" />,
-    <ChevronLeftIcon key="ChevronLeftIcon" />,
-    <ChevronRightIcon key="ChevronRightIcon" />,
-    <ChevronUpIcon key="ChevronUpIcon" />,
-    // Chevron
-    <ChevronLineLeftIcon key="ChevronLineLeftIcon" />,
-    <ChevronLineRightIcon key="ChevronLineRightIcon" />,
-    <Chevron2LeftIcon key="Chevron2LeftIcon" />,
-    <Chevron2RightIcon key="Chevron2RightIcon" />,
+    // Bin
+    <BinIcon key="BinIcon" />,
+    <BinFillIcon key="BinFillIcon" />,
+    // Bookmark
+    <BookmarkIcon key="BookmarkIcon" />,
+    <BookmarkFillIcon key="BookmarkFillIcon" />,
+    // Calendar
+    <CalendarIcon key="CalendarIcon" />,
+    <CalendarFillIcon key="CalendarFillIcon" />,
+    <CalendarEventIcon key="CalendarEventIcon" />,
+    <CalendarEventFillIcon key="CalendarEventFillIcon" />,
+    <CalendarPlusIcon key="CalendarPlusIcon" />,
+    <CalendarPlusFillIcon key="CalendarPlusFillIcon" />,
+    <CalendarTickIcon key="CalendarTickIcon" />,
+    <CalendarTickFillIcon key="CalendarTickFillIcon" />,
+    <CalendarCrossIcon key="CalendarCrossIcon" />,
+    <CalendarCrossFillIcon key="CalendarCrossFillIcon" />,
+    <CalendarDotIcon key="CalendarDotIcon" />,
+    <CalendarDotFillIcon key="CalendarDotFillIcon" />,
+    // Camera
+    <CameraIcon key="CameraIcon" />,
+    <CameraFillIcon key="CameraFillIcon" />,
     // Caret
     <CaretLeftIcon key="CaretLeftIcon" />,
     <CaretRightIcon key="CaretRightIcon" />,
     <CaretUpIcon key="CaretUpIcon" />,
     <CaretDownIcon key="CaretDownIcon" />,
-    // Triangle
-    <TriangleForwardIcon key="TriangleForwardIcon" />,
-    <TriangleForwardFillIcon key="TriangleForwardFillIcon" />,
-    // Ellipsis
-    <EllipsisHorizontalIcon key="EllipsisHorizontalIcon" />,
-    <EllipsisVerticalIcon key="EllipsisVerticalIcon" />,
-    // Plus
-    <PlusIcon key="PlusIcon" />,
-    <PlusCircleIcon key="PlusCircleIcon" />,
-    <PlusCircleFillIcon key="PlusCircleFillIcon" />,
-    // Minus
-    <MinusIcon key="MinusIcon" />,
-    <MinusCircleIcon key="MinusCircleIcon" />,
-    <MinusCircleFillIcon key="MinusCircleFillIcon" />,
+    // Chevron
+    <ChevronDownIcon key="ChevronDownIcon" />,
+    <ChevronLeftIcon key="ChevronLeftIcon" />,
+    <ChevronRightIcon key="ChevronRightIcon" />,
+    <ChevronUpIcon key="ChevronUpIcon" />,
+    <ChevronLineLeftIcon key="ChevronLineLeftIcon" />,
+    <ChevronLineRightIcon key="ChevronLineRightIcon" />,
+    <Chevron2LeftIcon key="Chevron2LeftIcon" />,
+    <Chevron2RightIcon key="Chevron2RightIcon" />,
+    // Circle
+    <CircleIcon key="CircleIcon" />,
+    <CircleDotIcon key="CircleDotIcon" />,
     // Cross
     <CrossIcon key="CrossIcon" />,
     <CrossCircleIcon key="CrossCircleIcon" />,
     <CrossCircleFillIcon key="CrossCircleFillIcon" />,
-    // Tick
-    <TickIcon key="TickIcon" />,
-    <TickCircleIcon key="TickCircleIcon" />,
-    <TickCircleFillIcon key="TickCircleFillIcon" />,
-    // Exclamation
-    <ExclamationCircleIcon key="ExclamationCircleIcon" />,
-    <ExclamationCircleFillIcon key="ExclamationCircleFillIcon" />,
-    <ExclamationTriangleIcon key="ExclamationTriangleIcon" />,
-    <ExclamationTriangleFillIcon key="ExclamationTriangleFillIcon" />,
-    // QuestionMark
-    <QuestionmarkCircleIcon key="QuestionmarkCircleIcon" />,
-    <QuestionmarkCircleFillIcon key="QuestionmarkCircleFillIcon" />,
-    // Circle
-    <CircleIcon key="CircleIcon" />,
-    <DotCircleIcon key="DotCircleIcon" />,
-    // I-Circle
-    <ICircleIcon key="ICircleIcon" />,
-    <ICircleFillIcon key="ICircleFillIcon" />,
-    // Square
-    <SquareIcon key="SquareIcon" />,
-    <TickSquareIcon key="TickSquareIcon" />,
-    <TickSquareFillIcon key="TickSquareFillIcon" />,
-    <Square2x2Icon key="Square2x2Icon" />,
-    <Square2x2FillIcon key="Square2x2FillIcon" />,
+    // Clock
+    <ClockIcon key="ClockIcon" />,
+    <ClockFillIcon key="ClockFillIcon" />,
     // Cloud
     <CloudIcon key="CloudIcon" />,
     <CloudFillIcon key="CloudFillIcon" />,
-    <ArrowUpCloudIcon key="ArrowUpCloudIcon" />,
-    <ArrowUpCloudFillIcon key="ArrowUpCloudFillIcon" />,
-    <ArrowDownCloudIcon key="ArrowDownCloudIcon" />,
-    <ArrowDownCloudFillIcon key="ArrowDownCloudFillIcon" />,
-    <TickCloudIcon key="TickCloudIcon" />,
-    <TickCloudFillIcon key="TickCloudFillIcon" />,
-    // Dollar
-    <DollarIcon key="DollarIcon" />,
-
-    // =============================================================================
-    // OBJECTS
-    // =============================================================================
-    // Evelope
-    <EnvelopeIcon key="EnvelopeIcon" />,
-    <EnvelopeFillIcon key="EnvelopeFillIcon" />,
-    <EnvelopeOpenIcon key="EnvelopeOpenIcon" />,
-    <EnvelopeOpenFillIcon key="EnvelopeOpenFillIcon" />,
-    // Bookmark
-    <BookmarkIcon key="BookmarkIcon" />,
-    <BookmarkFillIcon key="BookmarkFillIcon" />,
+    <CloudArrowUpIcon key="CloudArrowUpIcon" />,
+    <CloudArrowUpFillIcon key="CloudArrowUpFillIcon" />,
+    <CloudArrowDownIcon key="CloudArrowDownIcon" />,
+    <CloudArrowDownFillIcon key="CloudArrowDownFillIcon" />,
+    <CloudTickIcon key="CloudTickIcon" />,
+    <CloudTickFillIcon key="CloudTickFillIcon" />,
+    // Download
+    <DownloadIcon key="DownloadIcon" />,
     // Doc
     <DocIcon key="DocIcon" />,
     <DocFillIcon key="DocFillIcon" />,
     <DocPencilIcon key="DocPencilIcon" />,
     <DocPencilFillIcon key="DocPencilFillIcon" />,
-    // Pencil
-    <PencilIcon key="PencilIcon" />,
-    <PencilFillIcon key="PencilFillIcon" />,
-    <PencilStrokeIcon key="PencilStrokeIcon" />,
-    <PencilStrokeFillIcon key="PencilStrokeFillIcon" />,
-    // Ticket
-    <TicketIcon key="TicketIcon" />,
-    <TicketFillIcon key="TicketFillIcon" />,
-    // Map
-    <MapIcon key="MapIcon" />,
-    <MapFillIcon key="MapFillIcon" />,
-    // Lightbulb
-    <LightbulbIcon key="LightbulbIcon" />,
-    <LightbulbFillIcon key="LightbulbFillIcon" />,
-    // Clock
-    <ClockIcon key="ClockIcon" />,
-    <ClockFillIcon key="ClockFillIcon" />,
-    // Navigation
-    <NavigationIcon key="NavigationIcon" />,
-    <NavigationFillIcon key="NavigationFillIcon" />,
-    // Star
-    <StarIcon key="StarIcon" />,
-    <StarFillIcon key="StarFillIcon" />,
-    // Printer
-    <PrinterIcon key="PrinterIcon" />,
-    <PrinterFillIcon key="PrinterFillIcon" />,
-    // Phone
-    <PhoneIcon key="PhoneIcon" />,
-    <PhoneFillIcon key="PhoneFillIcon" />,
-    // Gear
-    <GearIcon key="GearIcon" />,
-    <GearFillIcon key="GearFillIcon" />,
-    // Inbox
-    <InboxIcon key="InboxIcon" />,
-    <InboxFillIcon key="InboxFillIcon" />,
-    // Pin
-    <PinIcon key="PinIcon" />,
-    <PinFillIcon key="PinFillIcon" />,
-    // Text
-    <TextIcon key="TextIcon" />,
-    <TextFillIcon key="TextFillIcon" />,
-    // Bin
-    <BinIcon key="BinIcon" />,
-    <BinFillIcon key="BinFillIcon" />,
-    // Camera
-    <CameraIcon key="CameraIcon" />,
-    <CameraFillIcon key="CameraFillIcon" />,
-    // Lock
-    <LockIcon key="LockIcon" />,
-    <LockFillIcon key="LockFillIcon" />,
+    // Dollar
+    <DollarIcon key="DollarIcon" />,
+    // Ellipsis
+    <EllipsisHorizontalIcon key="EllipsisHorizontalIcon" />,
+    <EllipsisVerticalIcon key="EllipsisVerticalIcon" />,
+    // Evelope
+    <EnvelopeIcon key="EnvelopeIcon" />,
+    <EnvelopeFillIcon key="EnvelopeFillIcon" />,
+    <EnvelopeOpenIcon key="EnvelopeOpenIcon" />,
+    <EnvelopeOpenFillIcon key="EnvelopeOpenFillIcon" />,
+    // Exclamation
+    <ExclamationCircleIcon key="ExclamationCircleIcon" />,
+    <ExclamationCircleFillIcon key="ExclamationCircleFillIcon" />,
+    <ExclamationTriangleIcon key="ExclamationTriangleIcon" />,
+    <ExclamationTriangleFillIcon key="ExclamationTriangleFillIcon" />,
+    // External
+    <ExternalIcon key="ExternalIcon" />,
     // Eye
     <EyeIcon key="EyeIcon" />,
     <EyeFillIcon key="EyeFillIcon" />,
     <EyeSlashIcon key="EyeSlashIcon" />,
     <EyeSlashFillIcon key="EyeSlashFillIcon" />,
+    // Filter
+    <FilterIcon key="FilterIcon" />,
+    // Gear
+    <GearIcon key="GearIcon" />,
+    <GearFillIcon key="GearFillIcon" />,
+    // Globe
+    <GlobeIcon key="GlobeIcon" />,
+    // I-Circle
+    <ICircleIcon key="ICircleIcon" />,
+    <ICircleFillIcon key="ICircleFillIcon" />,
+    // Inbox
+    <InboxIcon key="InboxIcon" />,
+    <InboxFillIcon key="InboxFillIcon" />,
+    // Language
+    <LanguageIcon key="LanguageIcon" />,
+    // Lightbulb
+    <LightbulbIcon key="LightbulbIcon" />,
+    <LightbulbFillIcon key="LightbulbFillIcon" />,
+    // List
+    <ListIcon key="ListIcon" />,
+    // Lock
+    <LockIcon key="LockIcon" />,
+    <LockFillIcon key="LockFillIcon" />,
+    // Link
+    <LinkIcon key="LinkIcon" />,
+    // Login
+    <LoginIcon key="LoginIcon" />,
+    // Logout
+    <LogoutIcon key="LogoutIcon" />,
+    // Magnifier
+    <MagnifierIcon key="MagnifierIcon" />,
+    <MagnifierPlusIcon key="MagnifierPlusIcon" />,
+    <MagnifierMinusIcon key="MagnifierMinusIcon" />,
+    // Map
+    <MapIcon key="MapIcon" />,
+    <MapFillIcon key="MapFillIcon" />,
+    // Menu
+    <MenuIcon key="MenuIcon" />,
+    // Minus
+    <MinusIcon key="MinusIcon" />,
+    <MinusCircleIcon key="MinusCircleIcon" />,
+    <MinusCircleFillIcon key="MinusCircleFillIcon" />,
+    // Navigation
+    <NavigationIcon key="NavigationIcon" />,
+    <NavigationFillIcon key="NavigationFillIcon" />,
+    // NonRecurring
+    <NonRecurringIcon key="NonRecurringIcon" />,
+    // Pencil
+    <PencilIcon key="PencilIcon" />,
+    <PencilFillIcon key="PencilFillIcon" />,
+    <PencilStrokeIcon key="PencilStrokeIcon" />,
+    <PencilStrokeFillIcon key="PencilStrokeFillIcon" />,
     // Person
     <PersonIcon key="PersonIcon" />,
     <PersonFillIcon key="PersonFillIcon" />,
@@ -362,73 +363,31 @@ export const ICONS: JSX.Element[] = [
     <Person2PlusFillIcon key="Person2PlusFillIcon" />,
     <Person2MinusIcon key="Person2MinusIcon" />,
     <Person2MinusFillIcon key="Person2MinusFillIcon" />,
-    // Toggle
-    <ToggleOffIcon key="ToggleOffIcon" />,
-    <ToggleOffFillIcon key="ToggleOffFillIcon" />,
-    <ToggleOnIcon key="ToggleOnIcon" />,
-    <ToggleOnFillIcon key="ToggleOnFillIcon" />,
-    // Calendar
-    <CalendarIcon key="CalendarIcon" />,
-    <CalendarFillIcon key="CalendarFillIcon" />,
-    <CalendarEventIcon key="CalendarEventIcon" />,
-    <CalendarEventFillIcon key="CalendarEventFillIcon" />,
-    <CalendarPlusIcon key="CalendarPlusIcon" />,
-    <CalendarPlusFillIcon key="CalendarPlusFillIcon" />,
-    <CalendarTickIcon key="CalendarTickIcon" />,
-    <CalendarTickFillIcon key="CalendarTickFillIcon" />,
-    <CalendarCrossIcon key="CalendarCrossIcon" />,
-    <CalendarCrossFillIcon key="CalendarCrossFillIcon" />,
-    <CalendarDotIcon key="CalendarDotIcon" />,
-    <CalendarDotFillIcon key="CalendarDotFillIcon" />,
-    // Album
-    <AlbumIcon key="AlbumIcon" />,
-    <AlbumFillIcon key="AlbumFillIcon" />,
-    // Magnifier
-    <MagnifierIcon key="MagnifierIcon" />,
-    <MagnifierPlusIcon key="MagnifierPlusIcon" />,
-    <MagnifierMinusIcon key="MagnifierMinusIcon" />,
-    // Menu
-    <MenuIcon key="MenuIcon" />,
-    // Language
-    <LanguageIcon key="LanguageIcon" />,
-    // Globe
-    <GlobeIcon key="GlobeIcon" />,
+    // Phone
+    <PhoneIcon key="PhoneIcon" />,
+    <PhoneFillIcon key="PhoneFillIcon" />,
+    // Pin
+    <PinIcon key="PinIcon" />,
+    <PinFillIcon key="PinFillIcon" />,
+    // Placeholder
+    <PlaceholderImageIcon key="PlaceholderImageIcon" />,
+    <PlaceholderIcon key="PlaceholderIcon" />,
+    // Plus
+    <PlusIcon key="PlusIcon" />,
+    <PlusCircleIcon key="PlusCircleIcon" />,
+    <PlusCircleFillIcon key="PlusCircleFillIcon" />,
+    // Point
+    <PointIcon key="PointIcon" />,
+    // Printer
+    <PrinterIcon key="PrinterIcon" />,
+    <PrinterFillIcon key="PrinterFillIcon" />,
     // Qr
     <QrIcon key="QrIcon" />,
-
-    // =============================================================================
-    // MISC
-    // =============================================================================
-    // Align
-    <AlignLeftIcon key="AlignLeftIcon" />,
-    <AlignCenterIcon key="AlignCenterIcon" />,
-    <AlignRightIcon key="AlignRightIcon" />,
-    <AlignJustifyIcon key="AlignJustifyIcon" />,
-    // Sort
-    <SortDescendingIcon key="SortDescendingIcon" />,
-    <SortAscendingIcon key="SortAscendingIcon" />,
-    // List
-    <ListIcon key="ListIcon" />,
-    // Filter
-    <FilterIcon key="FilterIcon" />,
-    // Link
-    <LinkIcon key="LinkIcon" />,
-    // External
-    <ExternalIcon key="ExternalIcon" />,
-    // Logout
-    <LogoutIcon key="LogoutIcon" />,
-    // Login
-    <LoginIcon key="LoginIcon" />,
-    // Upload
-    <UploadIcon key="UploadIcon" />,
-    // Download
-    <DownloadIcon key="DownloadIcon" />,
-    // Share
-    <ShareIcon key="ShareIcon" />,
+    // QuestionMark
+    <QuestionmarkCircleIcon key="QuestionmarkCircleIcon" />,
+    <QuestionmarkCircleFillIcon key="QuestionmarkCircleFillIcon" />,
     // Recurring
     <RecurringIcon key="RecurringIcon" />,
-    // NonRecurring
-    <NonRecurringIcon key="NonRecurringIcon" />,
     // Refresh
     <RefreshIcon key="RefreshIcon" />,
     // Replay
@@ -437,13 +396,38 @@ export const ICONS: JSX.Element[] = [
     <RetryIcon key="RetryIcon" />,
     // Return
     <ReturnIcon key="ReturnIcon" />,
-
-    // =============================================================================
-    // FIGMA EXCLUSIVE
-    // =============================================================================
-    // Point
-    <PointIcon key="PointIcon" />,
-    // Placeholder
-    <PlaceholderImageIcon key="PlaceholderImageIcon" />,
-    <PlaceholderIcon key="PlaceholderIcon" />,
+    // Share
+    <ShareIcon key="ShareIcon" />,
+    // Sort
+    <SortDescendingIcon key="SortDescendingIcon" />,
+    <SortAscendingIcon key="SortAscendingIcon" />,
+    // Star
+    <StarIcon key="StarIcon" />,
+    <StarFillIcon key="StarFillIcon" />,
+    // Square
+    <SquareIcon key="SquareIcon" />,
+    <SquareTickIcon key="SquareTickIcon" />,
+    <SquareTickFillIcon key="SquareTickFillIcon" />,
+    <Square2x2Icon key="Square2x2Icon" />,
+    <Square2x2FillIcon key="Square2x2FillIcon" />,
+    // Text
+    <TextIcon key="TextIcon" />,
+    <TextFillIcon key="TextFillIcon" />,
+    // Tick
+    <TickIcon key="TickIcon" />,
+    <TickCircleIcon key="TickCircleIcon" />,
+    <TickCircleFillIcon key="TickCircleFillIcon" />,
+    // Ticket
+    <TicketIcon key="TicketIcon" />,
+    <TicketFillIcon key="TicketFillIcon" />,
+    // Toggle
+    <ToggleOffIcon key="ToggleOffIcon" />,
+    <ToggleOffFillIcon key="ToggleOffFillIcon" />,
+    <ToggleOnIcon key="ToggleOnIcon" />,
+    <ToggleOnFillIcon key="ToggleOnFillIcon" />,
+    // Triangle
+    <TriangleForwardIcon key="TriangleForwardIcon" />,
+    <TriangleForwardFillIcon key="TriangleForwardFillIcon" />,
+    // Upload
+    <UploadIcon key="UploadIcon" />,
 ];

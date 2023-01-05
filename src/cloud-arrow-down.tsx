@@ -1,6 +1,6 @@
 import * as React from "react";
 import { SVGProps } from "react";
-export const ArrowDownCloudIcon = (props: SVGProps<SVGSVGElement>) => (
+export const CloudArrowDownIcon = (props: SVGProps<SVGSVGElement>) => (
     <svg
         width="1em"
         height="1em"
@@ -15,4 +15,4 @@ export const ArrowDownCloudIcon = (props: SVGProps<SVGSVGElement>) => (
         />
     </svg>
 );
-ArrowDownCloudIcon.displayName = "ArrowDownCloudIcon";
+CloudArrowDownIcon.displayName = "CloudArrowDownIcon";

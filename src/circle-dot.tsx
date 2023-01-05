@@ -1,6 +1,6 @@
 import * as React from "react";
 import { SVGProps } from "react";
-export const DotCircleIcon = (props: SVGProps<SVGSVGElement>) => (
+export const CircleDotIcon = (props: SVGProps<SVGSVGElement>) => (
     <svg
         width="1em"
         height="1em"
@@ -15,4 +15,4 @@ export const DotCircleIcon = (props: SVGProps<SVGSVGElement>) => (
         />
     </svg>
 );
-DotCircleIcon.displayName = "DotCircleIcon";
+CircleDotIcon.displayName = "CircleDotIcon";
