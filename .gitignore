@@ -12,3 +12,6 @@ coverage
 .vscode/launch.json
 
 storybook-static
+
+# misc
+.DS_Store
