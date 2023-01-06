@@ -3,8 +3,9 @@ import { useState } from "react";
 import { ArrowDownIcon } from "src";
 import { Heading3, Heading4, Secondary, Title } from "../storybook-common";
 import { IconSet } from "./doc-elements";
+import { MyCustomIcon } from "./demo";
 
-<Meta title="General/Icon" />
+<Meta title="Icon" />
 
 <Title>Icon</Title>
 
@@ -24,12 +25,37 @@ import { ArrowDownIcon } from "@lifesg/react-icons";
     </Story>
 </Canvas>
 
-<Secondary>Collection</Secondary>
+<Heading3>Modifying icon style</Heading3>
+
+You can simply customise the icon by extending it and applying your styles
+
+```tsx
+import styled from "styled-components";
+import { ArrorDownIcon } from "@lifesg/react-icons/arrow-down";
+
+export const MyCustomIcon = styled(ArrowDownIcon)`
+    color: red;
+    height: 2rem;
+    width: 2rem;
+`;
+```
+
+or if you have a custom css class, you may pass it through the `className` prop
+
+```tsx
+<ArrowDownIcon className="my-custom-class" />
+```
 
 <Preview>
-    <Story name="Collection">
-        <IconSet />
+    <Story name="Custom styling">
+        <MyCustomIcon />
     </Story>
 </Preview>
+
+<Secondary>Collection</Secondary>
+
+<Story name="Collection">
+    <IconSet />
+</Story>
 
 <br />
