@@ -11,7 +11,7 @@
         "rollup": "rm -rf dist && rollup -c",
         "post:build": "node ./scripts/post-build.js",
         "publish-lib": "npm publish ./dist",
-        "generate-icons": "node ./scripts/generate-icons.js",
+        "generate-icons": "node ./scripts/generate-icons.js && npx prettier --write src",
         "start": "rollup -c -w",
         "test": "jest --coverage",
         "prepare": "(test -d ./.git && npx husky install) || true",
