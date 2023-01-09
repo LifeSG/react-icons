@@ -13,6 +13,7 @@ export interface ColorSet {
         8: string;
     };
     Orange: string;
+    Green: string;
 }
 
 export const Colors: ColorSet = {
@@ -30,4 +31,5 @@ export const Colors: ColorSet = {
         8: "#FFFFFF",
     },
     Orange: "#FEAB10",
+    Green: "#4FC029",
 };

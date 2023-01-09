@@ -15,16 +15,9 @@ export const parameters = {
         transformSource: (input) => pretty(input),
     },
     options: {
-        // storySort: {
-        //     order: [
-        //         "Getting started",
-        //         ["Installation", "Themes", "Media Query", "Layout"],
-        //         "General",
-        //         "Form",
-        //         "Data Input",
-        //         "Modules",
-        //     ],
-        // },
+        storySort: {
+            order: ["Getting Started", "Icon"],
+        },
     },
 };
 
