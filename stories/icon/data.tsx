@@ -64,6 +64,8 @@ import {
     CloudIcon,
     CloudTickFillIcon,
     CloudTickIcon,
+    CopyFillIcon,
+    CopyIcon,
     CrossCircleFillIcon,
     CrossCircleIcon,
     CrossIcon,
@@ -249,10 +251,6 @@ export const ICONS: JSX.Element[] = [
     // Circle
     <CircleIcon key="CircleIcon" />,
     <CircleDotIcon key="CircleDotIcon" />,
-    // Cross
-    <CrossIcon key="CrossIcon" />,
-    <CrossCircleIcon key="CrossCircleIcon" />,
-    <CrossCircleFillIcon key="CrossCircleFillIcon" />,
     // Clock
     <ClockIcon key="ClockIcon" />,
     <ClockFillIcon key="ClockFillIcon" />,
@@ -265,6 +263,13 @@ export const ICONS: JSX.Element[] = [
     <CloudArrowDownFillIcon key="CloudArrowDownFillIcon" />,
     <CloudTickIcon key="CloudTickIcon" />,
     <CloudTickFillIcon key="CloudTickFillIcon" />,
+    // Copy
+    <CopyIcon key="CopyIcon" />,
+    <CopyFillIcon key="CopyFillIcon" />,
+    // Cross
+    <CrossIcon key="CrossIcon" />,
+    <CrossCircleIcon key="CrossCircleIcon" />,
+    <CrossCircleFillIcon key="CrossCircleFillIcon" />,
     // Download
     <DownloadIcon key="DownloadIcon" />,
     // Doc

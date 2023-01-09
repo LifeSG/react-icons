@@ -62,6 +62,8 @@ export * from "./cloud-fill";
 export * from "./cloud-tick-fill";
 export * from "./cloud-tick";
 export * from "./cloud";
+export * from "./copy-fill";
+export * from "./copy";
 export * from "./cross-circle-fill";
 export * from "./cross-circle";
 export * from "./cross";
