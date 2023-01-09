@@ -1,0 +1,33 @@
+{
+  "name": "@lifesg/react-icons",
+  "version": "1.0.0-alpha.1",
+  "description": "An icon component library for LifeSG and BookingSG web apps",
+  "main": "./cjs/index.js",
+  "module": "./index.js",
+  "typings": "./index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LifeSG/react-icons.git"
+  },
+  "keywords": [
+    "icons",
+    "react-icons"
+  ],
+  "author": "LifeSG",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LifeSG/react-icons/issues"
+  },
+  "homepage": "https://github.com/LifeSG/react-icons#readme",
+  "peerDependencies": {
+    "react": "^17.0.2 || ^18.0.0",
+    "react-dom": "^17.0.2 || ^18.0.0",
+    "styled-components": "^5.3.5"
+  },
+  "lint-staged": {
+    "*.ts{x}": [
+      "eslint --fix"
+    ]
+  },
+  "private": false
+}
