@@ -10,4 +10,4 @@ npm i @lifesg/react-icons
 
 ## Documentation
 
-See our [documentation] to see the usage information and collection.
+See our [documentation](https://designsystem.life.gov.sg/reacticons/index.html?path=/story/getting-started--page) to see the usage information and collection.
