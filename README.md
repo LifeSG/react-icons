@@ -7,3 +7,7 @@ A React icon library for LifeSG and BookingSG related products.
 ```
 npm i @lifesg/react-icons
 ```
+
+## Documentation
+
+See our [documentation] to see the usage information and collection.
