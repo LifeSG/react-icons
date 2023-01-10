@@ -1,0 +1,17 @@
+# dependencies
+node_modules
+
+# build
+dist
+*.tgz
+
+# testing
+coverage
+
+# debugging
+.vscode/launch.json
+
+storybook-static
+
+# misc
+.DS_Store
