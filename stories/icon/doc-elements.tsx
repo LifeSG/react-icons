@@ -266,7 +266,7 @@ const Clickable = styled.div<ClickableStyleProps>`
 `;
 
 const LabelLink = styled.span`
-    font-family: "Open Sans Regular";
+    font-family: "Open Sans";
     font-size: 0.9rem !important;
     margin-bottom: 0;
 `;
@@ -292,7 +292,7 @@ const Toast = styled.div`
 `;
 
 const ToastSubtitle = styled.span`
-    font-family: "Open Sans Regular";
+    font-family: "Open Sans";
     font-size: 0.9rem !important;
     color: ${Colors.Neutral[3]};
 `;
@@ -306,7 +306,7 @@ const FeedbackTooltip = styled.div`
     left: calc(-100% - 1rem);
     border-radius: 4px;
     margin: auto;
-    font-family: "Open Sans Regular";
+    font-family: "Open Sans";
     font-size: 0.75rem !important;
     color: ${Colors.Neutral[8]};
     background: rgba(0, 0, 0, 0.8);
