@@ -166,6 +166,7 @@ export * from "./square-tick-fill";
 export * from "./square-tick";
 export * from "./square";
 export * from "./star-fill";
+export * from "./star-half";
 export * from "./star";
 export * from "./text-fill";
 export * from "./text";
