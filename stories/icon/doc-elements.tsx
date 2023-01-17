@@ -130,7 +130,10 @@ export const IconSet = () => {
 
     const renderSnippetToast = (selectedDisplayName: string) => {
         const componentFileName = selectedDisplayName
-            .replace(/([a-z0–9])([A-Z])/g, "$1-$2")
+            // split words e.g. A-B and a-B
+            .replace(/([A-Za-z0-9])([A-Z])/g, "$1-$2")
+            // split alphanumeric groups e.g. -2x2-
+            .replace(/([A-Za-z])([0-9])([^-]+)?/g, "$1-$2$3")
             .toLowerCase()
             .replace("-icon", "");
 
