@@ -102,7 +102,9 @@ export const IconSet = () => {
     // HELPER FUNCTIONS
     // =========================================================================
     const shouldDismissToast = (event: MouseEvent | KeyboardEvent) => {
-        return !(toastRef && (toastRef.current as any).contains(event.target));
+        return !(
+            toastRef.current && (toastRef.current as any).contains(event.target)
+        );
     };
 
     // =========================================================================
