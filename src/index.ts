@@ -113,6 +113,8 @@ export * from "./map";
 export * from "./menu";
 export * from "./minus-circle-fill";
 export * from "./minus-circle";
+export * from "./minus-square-fill";
+export * from "./minus-square";
 export * from "./minus";
 export * from "./navigation-fill";
 export * from "./navigation";

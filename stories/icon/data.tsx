@@ -116,6 +116,8 @@ import {
     MinusCircleFillIcon,
     MinusCircleIcon,
     MinusIcon,
+    MinusSquareFillIcon,
+    MinusSquareIcon,
     NavigationFillIcon,
     NavigationIcon,
     NonRecurringIcon,
@@ -342,6 +344,8 @@ export const ICONS: JSX.Element[] = [
     <MinusIcon key="MinusIcon" />,
     <MinusCircleIcon key="MinusCircleIcon" />,
     <MinusCircleFillIcon key="MinusCircleFillIcon" />,
+    <MinusSquareIcon key="MinusSquareIcon" />,
+    <MinusSquareFillIcon key="MinusSquareFillIcon" />,
     // Navigation
     <NavigationIcon key="NavigationIcon" />,
     <NavigationFillIcon key="NavigationFillIcon" />,
