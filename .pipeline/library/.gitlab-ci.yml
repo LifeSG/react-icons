@@ -1,0 +1,34 @@
+include:
+    - project: "wog/gvt/lifesg/gvt-lifesg/devops/ci-scripts"
+      file:
+          - "common/agent-image.yml"
+          - "common/log-styling.yml"
+          - "git/git-publish.yml"
+          - "git/git-tag-release.yml"
+          - "npm/npm-install.yml"
+          - "aws/upload-to-s3.yml"
+    - project: "WOG/GVT/ship/ship-hats-templates"
+      ref: "main"
+      file:
+          - "/templates/.gitlab-ci-aws.yml"
+          - "/templates/.gitlab-ci-common.yml"
+    - local: ".pipeline/library/build.gitlab-ci.yml"
+    - local: ".pipeline/library/publish.gitlab-ci.yml"
+    - local: ".pipeline/library/tag.gitlab-ci.yml"
+    - local: ".pipeline/library/install.gitlab-ci.yml"
+    - local: ".pipeline/library/test.gitlab-ci.yml"
+
+default:
+    image: $ECS_AGENT
+    tags:
+        - cstack
+
+stages:
+    - install
+    - build
+    - publish
+    - tag
+
+workflow:
+    rules:
+        - when: always

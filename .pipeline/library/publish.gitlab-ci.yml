@@ -1,0 +1,99 @@
+# =================================
+# Job: Git Publish to Github Job
+# =================================
+
+publish-to-github-job:
+    stage: publish
+    variables:
+        GITHUB_USERNAME: "lifesg-ci"
+        GITHUB_REPO_URL: "github.com/lifesg/react-icons.git"
+    when: manual
+    rules:
+        - if: $CI_MERGE_REQUEST_ID # never run pipeline if has merge request id
+          when: never
+        - if: $CI_COMMIT_BRANCH != $CI_DEFAULT_BRANCH
+          when: manual
+        - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+    script:
+        - |
+            # Prepare git repo
+            rm -rf ./publish_repo
+            mkdir -p ./publish_repo
+            cd ./publish_repo
+
+            export GITHUB_URL="https://$GITHUB_USERNAME:$GITHUB_SECRET_TOKEN@$GITHUB_REPO_URL"
+            git clone --no-checkout $GITHUB_URL $( pwd )
+            git checkout -B $CI_COMMIT_BRANCH-published
+
+            # Remove everything except for .git
+            shopt -s extglob
+            rm -fr * .!(|.|git)
+
+            # Extract package
+            tar -C $( pwd ) --strip-components=1 -xvzf $CI_PROJECT_DIR/$ARTIFACT_PATH
+
+            # Push extracted files
+            VERSION=$(cat ./version.json | jq -r '.version' package.json)
+            commit_message="Built package | 'Version:' v$VERSION | 'Gitlab:' $CI_PROJECT_NAME $CI_COMMIT_BRANCH $CI_PIPELINE_ID"
+            echo $commit_message
+            git add -A && git commit -m "$commit_message"
+            git push $GITHUB_URL +HEAD:$CI_COMMIT_BRANCH-published --force
+
+# =================================
+# Job: Git Publish to NPM Job
+# =================================
+
+publish-to-npm-job:
+    stage: publish
+    when: manual
+    rules:
+        - if: $CI_MERGE_REQUEST_ID # never run pipeline if has merge request id
+          when: never
+        - if: $CI_COMMIT_BRANCH != $CI_DEFAULT_BRANCH
+          when: manual
+        - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+    script:
+        - |
+            #!/bin/bash
+            set -e
+            echo "[ Create npmrc ]"
+            trap "rm -rf ~/.npmrc" exit
+
+            echo "" > ~/.npmrc
+            chmod 0600 ~/.npmrc
+
+            echo //registry.npmjs.org/:_authToken=$NPM_ACCESS_TOKEN > ~/.npmrc
+            echo "[ Publish to NPM ]"
+            npm publish ./dist/*.tgz --access public
+
+            rm -rf ~/.npmrc
+
+# =================================
+# Job: Git Publish to Storybook Job
+# =================================
+
+nprod-publish-to-storybook-job:
+    extends: .upload-to-s3
+    stage: publish
+    variables:
+        BUCKET_NAME: "mol-dev-storybook/reacticons"
+    allow_failure: false
+    environment:
+        name: nprod
+        deployment_tier: other
+    when: manual
+
+# =================================
+# Job: Git Publish to Storybook Job
+# =================================
+
+prod-publish-to-storybook-job:
+    extends: .upload-to-s3
+    stage: publish
+    variables:
+        BUCKET_NAME: "mol-prd-storybook/reacticons"
+    allow_failure: false
+    environment:
+        name: prod
+        deployment_tier: production
+    when: manual
