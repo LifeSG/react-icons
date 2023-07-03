@@ -30,6 +30,7 @@ import {
     BookmarkIcon,
     BoxFillIcon,
     BoxIcon,
+    BuildingIcon,
     CalendarCrossFillIcon,
     CalendarCrossIcon,
     CalendarDotFillIcon,
@@ -44,6 +45,7 @@ import {
     CalendarTickIcon,
     CameraFillIcon,
     CameraIcon,
+    CarIcon,
     CaretDownIcon,
     CaretLeftIcon,
     CaretRightIcon,
@@ -81,6 +83,7 @@ import {
     DocPencilIcon,
     DollarIcon,
     DownloadIcon,
+    DragHandleIcon,
     EllipsisHorizontalIcon,
     EllipsisVerticalIcon,
     EnvelopeFillIcon,
@@ -238,6 +241,8 @@ export const ICONS: JSX.Element[] = [
     // Box
     <BoxIcon key="BoxIcon" />,
     <BoxFillIcon key="BoxFillIcon" />,
+    // Building
+    <BuildingIcon key="BuildingIcon" />,
     // Calendar
     <CalendarIcon key="CalendarIcon" />,
     <CalendarFillIcon key="CalendarFillIcon" />,
@@ -254,6 +259,8 @@ export const ICONS: JSX.Element[] = [
     // Camera
     <CameraIcon key="CameraIcon" />,
     <CameraFillIcon key="CameraFillIcon" />,
+    // Car
+    <CarIcon key="CarIcon" />,
     // Caret
     <CaretLeftIcon key="CaretLeftIcon" />,
     <CaretRightIcon key="CaretRightIcon" />,
@@ -302,6 +309,8 @@ export const ICONS: JSX.Element[] = [
     <DocPencilFillIcon key="DocPencilFillIcon" />,
     // Dollar
     <DollarIcon key="DollarIcon" />,
+    // DragHandle
+    <DragHandleIcon key="DragHandleIcon" />,
     // Ellipsis
     <EllipsisHorizontalIcon key="EllipsisHorizontalIcon" />,
     <EllipsisVerticalIcon key="EllipsisVerticalIcon" />,
