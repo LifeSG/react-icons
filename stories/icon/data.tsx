@@ -22,10 +22,15 @@ import {
     ArrowUpCircleFillIcon,
     ArrowUpCircleIcon,
     ArrowUpIcon,
+    BellFillIcon,
+    BellIcon,
     BinFillIcon,
     BinIcon,
     BookmarkFillIcon,
     BookmarkIcon,
+    BoxFillIcon,
+    BoxIcon,
+    BuildingIcon,
     CalendarCrossFillIcon,
     CalendarCrossIcon,
     CalendarDotFillIcon,
@@ -40,10 +45,13 @@ import {
     CalendarTickIcon,
     CameraFillIcon,
     CameraIcon,
+    CarIcon,
     CaretDownIcon,
     CaretLeftIcon,
     CaretRightIcon,
     CaretUpIcon,
+    ChartFillIcon,
+    ChartIcon,
     Chevron2LeftIcon,
     Chevron2RightIcon,
     ChevronDownIcon,
@@ -75,6 +83,7 @@ import {
     DocPencilIcon,
     DollarIcon,
     DownloadIcon,
+    DragHandleIcon,
     EllipsisHorizontalIcon,
     EllipsisVerticalIcon,
     EnvelopeFillIcon,
@@ -91,6 +100,8 @@ import {
     EyeSlashFillIcon,
     EyeSlashIcon,
     FilterIcon,
+    FullscreenCloseIcon,
+    FullscreenOpenIcon,
     GearFillIcon,
     GearIcon,
     GlobeIcon,
@@ -156,6 +167,7 @@ import {
     QrIcon,
     QuestionmarkCircleFillIcon,
     QuestionmarkCircleIcon,
+    ReadMoreIcon,
     RecurringIcon,
     RefreshIcon,
     ReplayIcon,
@@ -164,6 +176,8 @@ import {
     ShareIcon,
     SortAscendingIcon,
     SortDescendingIcon,
+    SpeakerFillIcon,
+    SpeakerIcon,
     Square2x2FillIcon,
     Square2x2Icon,
     SquareIcon,
@@ -215,12 +229,20 @@ export const ICONS: JSX.Element[] = [
     <ArrowLeftCircleFillIcon key="ArrowLeftCircleFillIcon" />,
     <ArrowRightCircleFillIcon key="ArrowRightCircleFillIcon" />,
     <ArrowUpCircleFillIcon key="ArrowUpCircleFillIcon" />,
+    // Bell
+    <BellIcon key="BellIcon" />,
+    <BellFillIcon key="BellFillIcon" />,
     // Bin
     <BinIcon key="BinIcon" />,
     <BinFillIcon key="BinFillIcon" />,
     // Bookmark
     <BookmarkIcon key="BookmarkIcon" />,
     <BookmarkFillIcon key="BookmarkFillIcon" />,
+    // Box
+    <BoxIcon key="BoxIcon" />,
+    <BoxFillIcon key="BoxFillIcon" />,
+    // Building
+    <BuildingIcon key="BuildingIcon" />,
     // Calendar
     <CalendarIcon key="CalendarIcon" />,
     <CalendarFillIcon key="CalendarFillIcon" />,
@@ -237,11 +259,16 @@ export const ICONS: JSX.Element[] = [
     // Camera
     <CameraIcon key="CameraIcon" />,
     <CameraFillIcon key="CameraFillIcon" />,
+    // Car
+    <CarIcon key="CarIcon" />,
     // Caret
     <CaretLeftIcon key="CaretLeftIcon" />,
     <CaretRightIcon key="CaretRightIcon" />,
     <CaretUpIcon key="CaretUpIcon" />,
     <CaretDownIcon key="CaretDownIcon" />,
+    // Chart
+    <ChartIcon key="ChartIcon" />,
+    <ChartFillIcon key="ChartFillIcon" />,
     // Chevron
     <ChevronDownIcon key="ChevronDownIcon" />,
     <ChevronLeftIcon key="ChevronLeftIcon" />,
@@ -282,6 +309,8 @@ export const ICONS: JSX.Element[] = [
     <DocPencilFillIcon key="DocPencilFillIcon" />,
     // Dollar
     <DollarIcon key="DollarIcon" />,
+    // DragHandle
+    <DragHandleIcon key="DragHandleIcon" />,
     // Ellipsis
     <EllipsisHorizontalIcon key="EllipsisHorizontalIcon" />,
     <EllipsisVerticalIcon key="EllipsisVerticalIcon" />,
@@ -304,6 +333,9 @@ export const ICONS: JSX.Element[] = [
     <EyeSlashFillIcon key="EyeSlashFillIcon" />,
     // Filter
     <FilterIcon key="FilterIcon" />,
+    // Full Screen
+    <FullscreenOpenIcon key="FullscreenOpenIcon" />,
+    <FullscreenCloseIcon key="FullscreenCloseIcon" />,
     // Gear
     <GearIcon key="GearIcon" />,
     <GearFillIcon key="GearFillIcon" />,
@@ -396,6 +428,8 @@ export const ICONS: JSX.Element[] = [
     // QuestionMark
     <QuestionmarkCircleIcon key="QuestionmarkCircleIcon" />,
     <QuestionmarkCircleFillIcon key="QuestionmarkCircleFillIcon" />,
+    // Read More
+    <ReadMoreIcon key="ReadMoreIcon" />,
     // Recurring
     <RecurringIcon key="RecurringIcon" />,
     // Refresh
@@ -415,6 +449,9 @@ export const ICONS: JSX.Element[] = [
     <StarIcon key="StarIcon" />,
     <StarHalfIcon key="StarHalfIcon" />,
     <StarFillIcon key="StarFillIcon" />,
+    // Speaker
+    <SpeakerIcon key="SpeakerIcon" />,
+    <SpeakerFillIcon key="SpeakerFillIcon" />,
     // Square
     <SquareIcon key="SquareIcon" />,
     <SquareTickIcon key="SquareTickIcon" />,

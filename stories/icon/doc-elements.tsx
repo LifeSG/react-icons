@@ -16,7 +16,6 @@ export const IconSet = () => {
     );
 
     const toastRef = useRef<HTMLDivElement>(null);
-    const scrollableRef = useRef<HTMLDivElement>(null);
     const selectedDisplayNameRef = useRef<string | undefined>(
         selectedDisplayName
     );
@@ -35,19 +34,12 @@ export const IconSet = () => {
     useEffect(() => {
         document.addEventListener("mousedown", handleMouseDown);
         document.addEventListener("keydown", handleKeyDown);
-        if (scrollableRef && scrollableRef.current) {
-            scrollableRef.current.addEventListener("scroll", handleScroll);
-        }
+        document.addEventListener("scroll", handleScroll);
 
         return () => {
             document.removeEventListener("mousedown", handleMouseDown);
             document.removeEventListener("keydown", handleKeyDown);
-            if (scrollableRef && scrollableRef.current) {
-                scrollableRef.current.removeEventListener(
-                    "scroll",
-                    handleScroll
-                );
-            }
+            document.removeEventListener("scroll", handleScroll);
         };
     }, []);
 
@@ -184,12 +176,12 @@ export const IconSet = () => {
     };
 
     return (
-        <Wrapper>
-            <Scrollable ref={scrollableRef}>
+        <>
+            <Wrapper>
                 <Set>{renderIcons()}</Set>
-            </Scrollable>
+            </Wrapper>
             {selectedDisplayName && renderSnippetToast(selectedDisplayName)}
-        </Wrapper>
+        </>
     );
 };
 
@@ -198,14 +190,6 @@ export const IconSet = () => {
 // =============================================================================
 const Wrapper = styled.div`
     position: relative;
-    border-radius: 4px;
-    box-shadow: rgba(0, 0, 0, 0.1) 0 1px 3px 0;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-`;
-
-const Scrollable = styled.div`
-    overflow-y: auto;
-    max-height: 700px;
 `;
 
 const Set = styled.ul`
@@ -217,12 +201,13 @@ const Set = styled.ul`
 const Item = styled.li`
     display: flex;
     flex-direction: column;
-    width: calc(100% / 6);
+    width: calc(100% / 4);
     align-items: center;
     justify-content: center;
+    margin-bottom: 1rem;
 
     @media screen and (max-width: 1199px) {
-        width: calc(100% / 4);
+        width: calc(100% / 3);
     }
 
     @media screen and (max-width: 480px) {
@@ -277,11 +262,10 @@ const LabelLink = styled.span`
 `;
 
 const Toast = styled.div`
-    position: absolute;
+    position: fixed;
     width: fit-content;
     height: fit-content;
-    top: 0;
-    bottom: 0;
+    top: 100px;
     left: 0;
     right: 0;
     margin: auto;
