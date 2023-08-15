@@ -454,8 +454,8 @@ export const ICONS: JSX.Element[] = [
     <SpeakerIcon key="SpeakerIcon" />,
     <SpeakerFillIcon key="SpeakerFillIcon" />,
     // Square
-    <SquareFillIcon key="SquareFillIcon" />,
     <SquareIcon key="SquareIcon" />,
+    <SquareFillIcon key="SquareFillIcon" />,
     <SquareTickIcon key="SquareTickIcon" />,
     <SquareTickFillIcon key="SquareTickFillIcon" />,
     <Square2x2Icon key="Square2x2Icon" />,
