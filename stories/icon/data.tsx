@@ -180,6 +180,7 @@ import {
     SpeakerIcon,
     Square2x2FillIcon,
     Square2x2Icon,
+    SquareFillIcon,
     SquareIcon,
     SquareTickFillIcon,
     SquareTickIcon,
@@ -453,6 +454,7 @@ export const ICONS: JSX.Element[] = [
     <SpeakerIcon key="SpeakerIcon" />,
     <SpeakerFillIcon key="SpeakerFillIcon" />,
     // Square
+    <SquareFillIcon key="SquareFillIcon" />,
     <SquareIcon key="SquareIcon" />,
     <SquareTickIcon key="SquareTickIcon" />,
     <SquareTickFillIcon key="SquareTickFillIcon" />,
