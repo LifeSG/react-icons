@@ -178,6 +178,7 @@ export * from "./speaker-fill";
 export * from "./speaker";
 export * from "./square-2x2-fill";
 export * from "./square-2x2";
+export * from "./square-fill";
 export * from "./square-tick-fill";
 export * from "./square-tick";
 export * from "./square";
