@@ -185,6 +185,8 @@ export * from "./square";
 export * from "./star-fill";
 export * from "./star-half";
 export * from "./star";
+export * from "./tablet-fill";
+export * from "./tablet";
 export * from "./text-fill";
 export * from "./text";
 export * from "./tick-circle-fill";

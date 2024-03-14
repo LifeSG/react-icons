@@ -187,6 +187,8 @@ import {
     StarFillIcon,
     StarHalfIcon,
     StarIcon,
+    TabletFillIcon,
+    TabletIcon,
     TextFillIcon,
     TextIcon,
     TickCircleFillIcon,
@@ -460,6 +462,9 @@ export const ICONS: JSX.Element[] = [
     <SquareTickFillIcon key="SquareTickFillIcon" />,
     <Square2x2Icon key="Square2x2Icon" />,
     <Square2x2FillIcon key="Square2x2FillIcon" />,
+    //Tablet
+    <TabletIcon key="TabletIcon" />,
+    <TabletFillIcon key="TabletFillIcon" />,
     // Text
     <TextIcon key="TextIcon" />,
     <TextFillIcon key="TextFillIcon" />,
