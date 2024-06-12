@@ -88,6 +88,7 @@ export * from "./envelope-fill";
 export * from "./envelope-open-fill";
 export * from "./envelope-open";
 export * from "./envelope";
+export * from "./eraser";
 export * from "./exclamation-circle-fill";
 export * from "./exclamation-circle";
 export * from "./exclamation-triangle-fill";

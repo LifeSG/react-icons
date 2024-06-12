@@ -90,6 +90,7 @@ import {
     EnvelopeIcon,
     EnvelopeOpenFillIcon,
     EnvelopeOpenIcon,
+    EraserIcon,
     ExclamationCircleFillIcon,
     ExclamationCircleIcon,
     ExclamationTriangleFillIcon,
@@ -317,6 +318,8 @@ export const ICONS: JSX.Element[] = [
     // Ellipsis
     <EllipsisHorizontalIcon key="EllipsisHorizontalIcon" />,
     <EllipsisVerticalIcon key="EllipsisVerticalIcon" />,
+    // Evelope
+    <EraserIcon key="EraserIcon" />,
     // Evelope
     <EnvelopeIcon key="EnvelopeIcon" />,
     <EnvelopeFillIcon key="EnvelopeFillIcon" />,
