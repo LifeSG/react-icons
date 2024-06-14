@@ -319,12 +319,12 @@ export const ICONS: JSX.Element[] = [
     <EllipsisHorizontalIcon key="EllipsisHorizontalIcon" />,
     <EllipsisVerticalIcon key="EllipsisVerticalIcon" />,
     // Evelope
-    <EraserIcon key="EraserIcon" />,
-    // Evelope
     <EnvelopeIcon key="EnvelopeIcon" />,
     <EnvelopeFillIcon key="EnvelopeFillIcon" />,
     <EnvelopeOpenIcon key="EnvelopeOpenIcon" />,
     <EnvelopeOpenFillIcon key="EnvelopeOpenFillIcon" />,
+    // Eraser
+    <EraserIcon key="EraserIcon" />,
     // Exclamation
     <ExclamationCircleIcon key="ExclamationCircleIcon" />,
     <ExclamationCircleFillIcon key="ExclamationCircleFillIcon" />,
