@@ -95,7 +95,7 @@
         "styled-components": "^5.3.5"
     },
     "lint-staged": {
-        "*.ts{x}": [
+        "*.{tsx,ts}": [
             "eslint --fix"
         ]
     }
