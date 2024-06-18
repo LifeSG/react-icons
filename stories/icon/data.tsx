@@ -90,6 +90,7 @@ import {
     EnvelopeIcon,
     EnvelopeOpenFillIcon,
     EnvelopeOpenIcon,
+    EraserIcon,
     ExclamationCircleFillIcon,
     ExclamationCircleIcon,
     ExclamationTriangleFillIcon,
@@ -322,6 +323,8 @@ export const ICONS: JSX.Element[] = [
     <EnvelopeFillIcon key="EnvelopeFillIcon" />,
     <EnvelopeOpenIcon key="EnvelopeOpenIcon" />,
     <EnvelopeOpenFillIcon key="EnvelopeOpenFillIcon" />,
+    // Eraser
+    <EraserIcon key="EraserIcon" />,
     // Exclamation
     <ExclamationCircleIcon key="ExclamationCircleIcon" />,
     <ExclamationCircleFillIcon key="ExclamationCircleFillIcon" />,
