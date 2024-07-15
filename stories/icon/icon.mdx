@@ -1,4 +1,4 @@
-import { Meta, Preview } from "@storybook/addon-docs";
+import { Canvas, Meta } from "@storybook/blocks";
 import { ArrowDownIcon } from "src";
 import { Heading3, Heading4, Secondary, Title } from "../storybook-common";
 import { IconSet } from "./doc-elements";
@@ -29,10 +29,6 @@ import { ArrowDownIcon } from "@lifesg/react-icons/arrow-down";
 import { ArrowDownIcon } from "@lifesg/react-icons";
 ```
 
-<Preview>
-    <ArrowDownIcon />
-</Preview>
-
 <Heading3>Modifying icon style</Heading3>
 
 You can simply customise the icon by extending it and applying your styles
@@ -47,10 +43,6 @@ export const MyCustomIcon = styled(ArrowDownIcon)`
     width: 2rem;
 `;
 ```
-
-<Preview>
-    <MyCustomIcon />
-</Preview>
 
 or if you have a custom css class, you may pass it through the `className` prop
 
