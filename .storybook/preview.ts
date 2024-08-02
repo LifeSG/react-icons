@@ -1,6 +1,4 @@
-import { withA11y } from "@storybook/addon-a11y";
 import { INITIAL_VIEWPORTS } from "@storybook/addon-viewport";
-import { addDecorator } from "@storybook/react";
 import pretty from "pretty";
 
 export const parameters = {
@@ -20,5 +18,3 @@ export const parameters = {
         },
     },
 };
-
-addDecorator(withA11y);
