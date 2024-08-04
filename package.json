@@ -1,6 +1,6 @@
 {
     "name": "@lifesg/react-icons",
-    "version": "1.6.0",
+    "version": "1.7.0",
     "description": "An icon component library for LifeSG and BookingSG web apps",
     "main": "dist/cjs/index.js",
     "module": "dist/index.js",
@@ -16,7 +16,7 @@
         "test": "jest --coverage",
         "prepare": "(test -d ./.git && npx husky install) || true",
         "storybook": "storybook dev -p 6006",
-        "build-storybook": "build-storybook"
+        "build-storybook": "storybook build"
     },
     "repository": {
         "type": "git",
