@@ -101,6 +101,8 @@ import {
     EyeSlashFillIcon,
     EyeSlashIcon,
     FilterIcon,
+    FloorPlanFillIcon,
+    FloorPlanIcon,
     FullscreenCloseIcon,
     FullscreenOpenIcon,
     GearFillIcon,
@@ -339,6 +341,9 @@ export const ICONS: JSX.Element[] = [
     <EyeSlashFillIcon key="EyeSlashFillIcon" />,
     // Filter
     <FilterIcon key="FilterIcon" />,
+    // FloorPlan
+    <FloorPlanIcon key="FloorPlanIcon" />,
+    <FloorPlanFillIcon key="FloorPlanFillIcon" />,
     // Full Screen
     <FullscreenOpenIcon key="FullscreenOpenIcon" />,
     <FullscreenCloseIcon key="FullscreenCloseIcon" />,
