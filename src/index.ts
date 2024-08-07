@@ -99,6 +99,8 @@ export * from "./eye-slash-fill";
 export * from "./eye-slash";
 export * from "./eye";
 export * from "./filter";
+export * from "./floor-plan-fill";
+export * from "./floor-plan";
 export * from "./fullscreen-close";
 export * from "./fullscreen-open";
 export * from "./gear-fill";
