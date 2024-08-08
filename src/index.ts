@@ -203,4 +203,6 @@ export * from "./toggle-on-fill";
 export * from "./toggle-on";
 export * from "./triangle-forward-fill";
 export * from "./triangle-forward";
+export * from "./unfold-less";
+export * from "./unfold-more";
 export * from "./upload";

@@ -205,6 +205,8 @@ import {
     ToggleOnIcon,
     TriangleForwardFillIcon,
     TriangleForwardIcon,
+    UnfoldLessIcon,
+    UnfoldMoreIcon,
     UploadIcon,
 } from "../../src";
 
@@ -491,6 +493,9 @@ export const ICONS: JSX.Element[] = [
     // Triangle
     <TriangleForwardIcon key="TriangleForwardIcon" />,
     <TriangleForwardFillIcon key="TriangleForwardFillIcon" />,
+    //Unfold
+    <UnfoldLessIcon key="UnfoldLessIcon" />,
+    <UnfoldMoreIcon key="UnfoldMoreIcon" />,
     // Upload
     <UploadIcon key="UploadIcon" />,
 ];
