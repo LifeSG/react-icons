@@ -132,6 +132,8 @@ import {
     MinusIcon,
     MinusSquareFillIcon,
     MinusSquareIcon,
+    MultiChevronDownUpIcon,
+    MultiChevronUpDownIcon,
     NavigationFillIcon,
     NavigationIcon,
     NonRecurringIcon,
@@ -205,8 +207,6 @@ import {
     ToggleOnIcon,
     TriangleForwardFillIcon,
     TriangleForwardIcon,
-    UnfoldLessIcon,
-    UnfoldMoreIcon,
     UploadIcon,
 } from "../../src";
 
@@ -391,6 +391,9 @@ export const ICONS: JSX.Element[] = [
     <MinusCircleFillIcon key="MinusCircleFillIcon" />,
     <MinusSquareIcon key="MinusSquareIcon" />,
     <MinusSquareFillIcon key="MinusSquareFillIcon" />,
+    // Multi Chevron
+    <MultiChevronDownUpIcon key="MultiChevronDownUpIcon" />,
+    <MultiChevronUpDownIcon key="MultiChevronUpDownIcon" />,
     // Navigation
     <NavigationIcon key="NavigationIcon" />,
     <NavigationFillIcon key="NavigationFillIcon" />,
@@ -493,9 +496,6 @@ export const ICONS: JSX.Element[] = [
     // Triangle
     <TriangleForwardIcon key="TriangleForwardIcon" />,
     <TriangleForwardFillIcon key="TriangleForwardFillIcon" />,
-    //Unfold
-    <UnfoldLessIcon key="UnfoldLessIcon" />,
-    <UnfoldMoreIcon key="UnfoldMoreIcon" />,
     // Upload
     <UploadIcon key="UploadIcon" />,
 ];
