@@ -130,6 +130,8 @@ export * from "./minus-circle";
 export * from "./minus-square-fill";
 export * from "./minus-square";
 export * from "./minus";
+export * from "./multi-chevron-down-up";
+export * from "./multi-chevron-up-down";
 export * from "./navigation-fill";
 export * from "./navigation";
 export * from "./non-recurring";

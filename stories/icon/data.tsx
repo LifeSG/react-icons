@@ -132,6 +132,8 @@ import {
     MinusIcon,
     MinusSquareFillIcon,
     MinusSquareIcon,
+    MultiChevronDownUpIcon,
+    MultiChevronUpDownIcon,
     NavigationFillIcon,
     NavigationIcon,
     NonRecurringIcon,
@@ -389,6 +391,9 @@ export const ICONS: JSX.Element[] = [
     <MinusCircleFillIcon key="MinusCircleFillIcon" />,
     <MinusSquareIcon key="MinusSquareIcon" />,
     <MinusSquareFillIcon key="MinusSquareFillIcon" />,
+    // Multi Chevron
+    <MultiChevronDownUpIcon key="MultiChevronDownUpIcon" />,
+    <MultiChevronUpDownIcon key="MultiChevronUpDownIcon" />,
     // Navigation
     <NavigationIcon key="NavigationIcon" />,
     <NavigationFillIcon key="NavigationFillIcon" />,
