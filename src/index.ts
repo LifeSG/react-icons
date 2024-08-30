@@ -36,6 +36,8 @@ export * from "./calendar-dot";
 export * from "./calendar-event-fill";
 export * from "./calendar-event";
 export * from "./calendar-fill";
+export * from "./calendar-pencil";
+export * from "./calendar-pencil-fill";
 export * from "./calendar-plus-fill";
 export * from "./calendar-plus";
 export * from "./calendar-tick-fill";

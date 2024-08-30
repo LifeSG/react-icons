@@ -39,6 +39,8 @@ import {
     CalendarEventIcon,
     CalendarFillIcon,
     CalendarIcon,
+    CalendarPencilFillIcon,
+    CalendarPencilIcon,
     CalendarPlusFillIcon,
     CalendarPlusIcon,
     CalendarTickFillIcon,
@@ -264,6 +266,8 @@ export const ICONS: JSX.Element[] = [
     <CalendarCrossFillIcon key="CalendarCrossFillIcon" />,
     <CalendarDotIcon key="CalendarDotIcon" />,
     <CalendarDotFillIcon key="CalendarDotFillIcon" />,
+    <CalendarPencilIcon key="CalendarPencilIcon" />,
+    <CalendarPencilFillIcon key="CalendarPencilFillIcon" />,
     // Camera
     <CameraIcon key="CameraIcon" />,
     <CameraFillIcon key="CameraFillIcon" />,
