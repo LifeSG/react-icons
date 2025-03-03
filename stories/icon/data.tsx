@@ -198,6 +198,8 @@ import {
     TabletIcon,
     TextFillIcon,
     TextIcon,
+    ThumbUpFillIcon,
+    ThumbUpIcon,
     TickCircleFillIcon,
     TickCircleIcon,
     TickIcon,
@@ -485,6 +487,9 @@ export const ICONS: JSX.Element[] = [
     // Text
     <TextIcon key="TextIcon" />,
     <TextFillIcon key="TextFillIcon" />,
+    // ThumbUp
+    <ThumbUpIcon key="ThumbUpIcon" />,
+    <ThumbUpFillIcon key="ThumbUpFillIcon" />,
     // Tick
     <TickIcon key="TickIcon" />,
     <TickCircleIcon key="TickCircleIcon" />,
