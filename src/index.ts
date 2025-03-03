@@ -1,3 +1,7 @@
+// =========================================================
+// This file is auto generated with `npm run generate-icons`
+// =========================================================
+
 export * from "./album-fill";
 export * from "./album";
 export * from "./align-center";
