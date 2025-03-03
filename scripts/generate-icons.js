@@ -78,6 +78,12 @@ async function generateIndexFile() {
     const componentFiles = await readdir(destinationPath);
 
     let data = "";
+
+    data += "// =========================================================\n";
+    data += "// This file is auto generated with `npm run generate-icons`\n";
+    data += "// =========================================================\n";
+    data += "\n";
+
     for (const file of componentFiles) {
         if (file !== "index.ts") {
             data = data.concat(
