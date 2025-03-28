@@ -39,6 +39,7 @@ async function transformToJSX(file) {
             typescript: true,
             replaceAttrValues: {
                 "#282828": "currentColor",
+                "#686868": "currentColor",
             },
             template: require("../templates/svgr-template"),
         },
