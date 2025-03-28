@@ -160,6 +160,8 @@ export * from "./person-group-fill";
 export * from "./person-group";
 export * from "./person-minus-fill";
 export * from "./person-minus";
+export * from "./person-off-fill";
+export * from "./person-off";
 export * from "./person-plus-fill";
 export * from "./person-plus";
 export * from "./person";
