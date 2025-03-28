@@ -112,6 +112,8 @@ export * from "./fullscreen-open";
 export * from "./gear-fill";
 export * from "./gear";
 export * from "./globe";
+export * from "./house-fill";
+export * from "./house";
 export * from "./i-circle-fill";
 export * from "./i-circle";
 export * from "./inbox-fill";
