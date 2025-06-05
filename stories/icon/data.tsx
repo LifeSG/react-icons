@@ -114,6 +114,8 @@ import {
     HouseIcon,
     ICircleFillIcon,
     ICircleIcon,
+    IdCardFillIcon,
+    IdCardIcon,
     InboxFillIcon,
     InboxIcon,
     LanguageIcon,
@@ -370,6 +372,9 @@ export const ICONS: JSX.Element[] = [
     // I-Circle
     <ICircleIcon key="ICircleIcon" />,
     <ICircleFillIcon key="ICircleFillIcon" />,
+    // Id Card
+    <IdCardIcon key="IdCardIcon" />,
+    <IdCardFillIcon key="IdCardFillIcon" />,
     // Inbox
     <InboxIcon key="InboxIcon" />,
     <InboxFillIcon key="InboxFillIcon" />,
