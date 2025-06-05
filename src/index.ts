@@ -116,6 +116,8 @@ export * from "./house-fill";
 export * from "./house";
 export * from "./i-circle-fill";
 export * from "./i-circle";
+export * from "./id-card-fill";
+export * from "./id-card";
 export * from "./inbox-fill";
 export * from "./inbox";
 export * from "./language";
