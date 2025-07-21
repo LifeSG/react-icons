@@ -110,8 +110,8 @@ import {
     GearFillIcon,
     GearIcon,
     GlobeIcon,
-    HomeOffice,
-    HomeOfficeFill,
+    HomeOfficeFillIcon,
+    HomeOfficeIcon,
     HouseFillIcon,
     HouseIcon,
     ICircleFillIcon,
@@ -369,8 +369,8 @@ export const ICONS: JSX.Element[] = [
     // Globe
     <GlobeIcon key="GlobeIcon" />,
     // HomeOffice
-    <HomeOffice key="HomeOffice" />,
-    <HomeOfficeFill key="HomeOfficeFill" />,
+    <HomeOfficeIcon key="HomeOffice" />,
+    <HomeOfficeFillIcon key="HomeOfficeFill" />,
     // House
     <HouseIcon key="HouseIcon" />,
     <HouseFillIcon key="HouseFillIcon" />,
