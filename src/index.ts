@@ -112,6 +112,8 @@ export * from "./fullscreen-open";
 export * from "./gear-fill";
 export * from "./gear";
 export * from "./globe";
+export * from "./heart-fill";
+export * from "./heart";
 export * from "./home-office-fill";
 export * from "./home-office";
 export * from "./house-fill";
