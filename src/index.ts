@@ -139,6 +139,7 @@ export * from "./magnifier";
 export * from "./map-fill";
 export * from "./map";
 export * from "./menu";
+export * from "./merge";
 export * from "./minus-circle-fill";
 export * from "./minus-circle";
 export * from "./minus-square-fill";
