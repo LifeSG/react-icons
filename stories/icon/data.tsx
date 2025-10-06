@@ -137,6 +137,7 @@ import {
     MapFillIcon,
     MapIcon,
     MenuIcon,
+    MergeIcon,
     MinusCircleFillIcon,
     MinusCircleIcon,
     MinusIcon,
@@ -413,6 +414,8 @@ export const ICONS: JSX.Element[] = [
     <MapFillIcon key="MapFillIcon" />,
     // Menu
     <MenuIcon key="MenuIcon" />,
+    // Merge
+    <MergeIcon key="MergeIcon" />,
     // Minus
     <MinusIcon key="MinusIcon" />,
     <MinusCircleIcon key="MinusCircleIcon" />,
