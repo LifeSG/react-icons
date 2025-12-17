@@ -30,6 +30,8 @@ import {
     BookmarkIcon,
     BoxFillIcon,
     BoxIcon,
+    BriefcaseFillIcon,
+    BriefcaseIcon,
     BuildingIcon,
     CalendarCrossFillIcon,
     CalendarCrossIcon,
@@ -264,6 +266,9 @@ export const ICONS: JSX.Element[] = [
     // Box
     <BoxIcon key="BoxIcon" />,
     <BoxFillIcon key="BoxFillIcon" />,
+    // Briefcase
+    <BriefcaseIcon key="BriefcaseIcon" />,
+    <BriefcaseFillIcon key="BriefcaseFillIcon" />,
     // Building
     <BuildingIcon key="BuildingIcon" />,
     // Calendar
