@@ -32,6 +32,8 @@ export * from "./bookmark-fill";
 export * from "./bookmark";
 export * from "./box-fill";
 export * from "./box";
+export * from "./briefcase-fill";
+export * from "./briefcase";
 export * from "./building";
 export * from "./calendar-cross-fill";
 export * from "./calendar-cross";
