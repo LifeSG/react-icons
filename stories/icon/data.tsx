@@ -56,6 +56,8 @@ import {
     CaretUpIcon,
     ChartFillIcon,
     ChartIcon,
+    CheerFillIcon,
+    CheerIcon,
     Chevron2LeftIcon,
     Chevron2RightIcon,
     ChevronDownIcon,
@@ -299,6 +301,9 @@ export const ICONS: JSX.Element[] = [
     // Chart
     <ChartIcon key="ChartIcon" />,
     <ChartFillIcon key="ChartFillIcon" />,
+    // Cheer
+    <CheerIcon key="CheerIcon" />,
+    <CheerFillIcon key="CheerFillIcon" />,
     // Chevron
     <ChevronDownIcon key="ChevronDownIcon" />,
     <ChevronLeftIcon key="ChevronLeftIcon" />,

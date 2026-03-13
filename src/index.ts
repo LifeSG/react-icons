@@ -58,6 +58,8 @@ export * from "./caret-right";
 export * from "./caret-up";
 export * from "./chart-fill";
 export * from "./chart";
+export * from "./cheer-fill";
+export * from "./cheer";
 export * from "./chevron-2-left";
 export * from "./chevron-2-right";
 export * from "./chevron-down";
