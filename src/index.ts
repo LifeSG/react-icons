@@ -212,6 +212,7 @@ export * from "./square-tick";
 export * from "./square";
 export * from "./star-fill";
 export * from "./star-half";
+export * from "./star-outline";
 export * from "./star";
 export * from "./tablet-fill";
 export * from "./tablet";

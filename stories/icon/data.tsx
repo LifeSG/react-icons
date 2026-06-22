@@ -211,6 +211,7 @@ import {
     StarFillIcon,
     StarHalfIcon,
     StarIcon,
+    StarOutlineIcon,
     TabletFillIcon,
     TabletIcon,
     TextFillIcon,
@@ -514,6 +515,7 @@ export const ICONS: JSX.Element[] = [
     <StarIcon key="StarIcon" />,
     <StarHalfIcon key="StarHalfIcon" />,
     <StarFillIcon key="StarFillIcon" />,
+    <StarOutlineIcon key="StarOutlineIcon" />,
     // Speaker
     <SpeakerIcon key="SpeakerIcon" />,
     <SpeakerFillIcon key="SpeakerFillIcon" />,
