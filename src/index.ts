@@ -109,6 +109,8 @@ export * from "./eye-slash-fill";
 export * from "./eye-slash";
 export * from "./eye";
 export * from "./filter";
+export * from "./flag-fill";
+export * from "./flag";
 export * from "./floor-plan-fill";
 export * from "./floor-plan";
 export * from "./fullscreen-close";

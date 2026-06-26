@@ -107,6 +107,8 @@ import {
     EyeSlashFillIcon,
     EyeSlashIcon,
     FilterIcon,
+    FlagFillIcon,
+    FlagIcon,
     FloorPlanFillIcon,
     FloorPlanIcon,
     FullscreenCloseIcon,
@@ -374,6 +376,9 @@ export const ICONS: JSX.Element[] = [
     <EyeSlashFillIcon key="EyeSlashFillIcon" />,
     // Filter
     <FilterIcon key="FilterIcon" />,
+    // Flag
+    <FlagIcon key="FlagIcon" />,
+    <FlagFillIcon key="FlagFillIcon" />,
     // FloorPlan
     <FloorPlanIcon key="FloorPlanIcon" />,
     <FloorPlanFillIcon key="FloorPlanFillIcon" />,
