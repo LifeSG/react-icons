@@ -26,6 +26,9 @@ import {
     BellIcon,
     BinFillIcon,
     BinIcon,
+    BoldIcon,
+    BookFillIcon,
+    BookIcon,
     BookmarkFillIcon,
     BookmarkIcon,
     BoxFillIcon,
@@ -33,6 +36,7 @@ import {
     BriefcaseFillIcon,
     BriefcaseIcon,
     BuildingIcon,
+    ButtonIcon,
     CalendarCrossFillIcon,
     CalendarCrossIcon,
     CalendarDotFillIcon,
@@ -50,6 +54,8 @@ import {
     CameraFillIcon,
     CameraIcon,
     CarIcon,
+    CardsStackedFillIcon,
+    CardsStackedIcon,
     CaretDownIcon,
     CaretLeftIcon,
     CaretRightIcon,
@@ -68,6 +74,7 @@ import {
     ChevronUpIcon,
     CircleDotIcon,
     CircleIcon,
+    ClearFormattingIcon,
     ClockFillIcon,
     ClockIcon,
     CloudArrowDownFillIcon,
@@ -88,6 +95,8 @@ import {
     DocPencilFillIcon,
     DocPencilIcon,
     DollarIcon,
+    DollarRectangleFillIcon,
+    DollarRectangleIcon,
     DownloadIcon,
     DragHandleIcon,
     EllipsisHorizontalIcon,
@@ -106,11 +115,14 @@ import {
     EyeIcon,
     EyeSlashFillIcon,
     EyeSlashIcon,
+    FillIcon,
     FilterIcon,
     FlagFillIcon,
     FlagIcon,
     FloorPlanFillIcon,
     FloorPlanIcon,
+    FolderFillIcon,
+    FolderIcon,
     FullscreenCloseIcon,
     FullscreenOpenIcon,
     GearFillIcon,
@@ -126,6 +138,8 @@ import {
     ICircleIcon,
     IdCardFillIcon,
     IdCardIcon,
+    ImageFillIcon,
+    ImageIcon,
     InboxFillIcon,
     InboxIcon,
     LanguageIcon,
@@ -133,6 +147,8 @@ import {
     LightbulbIcon,
     LinkIcon,
     ListIcon,
+    ListSquareFillIcon,
+    ListSquareIcon,
     LockFillIcon,
     LockIcon,
     LockOpenFillIcon,
@@ -144,6 +160,8 @@ import {
     MagnifierPlusIcon,
     MapFillIcon,
     MapIcon,
+    MedicalBoxFillIcon,
+    MedicalBoxIcon,
     MenuIcon,
     MergeIcon,
     MinusCircleFillIcon,
@@ -153,9 +171,14 @@ import {
     MinusSquareIcon,
     MultiChevronDownUpIcon,
     MultiChevronUpDownIcon,
+    MultiChevronUpDownSquareFillIcon,
+    MultiChevronUpDownSquareIcon,
     NavigationFillIcon,
     NavigationIcon,
     NonRecurringIcon,
+    NoticeboardFillIcon,
+    NoticeboardIcon,
+    OrderedListIcon,
     PencilFillIcon,
     PencilIcon,
     PencilStrokeFillIcon,
@@ -195,6 +218,7 @@ import {
     QuestionmarkCircleIcon,
     ReadMoreIcon,
     RecurringIcon,
+    RedoIcon,
     RefreshIcon,
     ReplayIcon,
     RetryIcon,
@@ -202,6 +226,7 @@ import {
     ShareIcon,
     SortAscendingIcon,
     SortDescendingIcon,
+    SparkleIcon,
     SpeakerFillIcon,
     SpeakerIcon,
     Square2x2FillIcon,
@@ -213,6 +238,13 @@ import {
     StarFillIcon,
     StarHalfIcon,
     StarIcon,
+    TableAddLeftColumnIcon,
+    TableAddRightColumnIcon,
+    TableAddRowAboveIcon,
+    TableAddRowBelowIcon,
+    TableIcon,
+    TableRemoveColumnIcon,
+    TableRemoveRowIcon,
     TabletFillIcon,
     TabletIcon,
     TextFillIcon,
@@ -232,6 +264,8 @@ import {
     ToggleOnIcon,
     TriangleForwardFillIcon,
     TriangleForwardIcon,
+    UndoIcon,
+    UnlinkIcon,
     UploadIcon,
 } from "../../src";
 
@@ -268,6 +302,11 @@ export const ICONS: JSX.Element[] = [
     // Bin
     <BinIcon key="BinIcon" />,
     <BinFillIcon key="BinFillIcon" />,
+    // Bold
+    <BoldIcon key="BoldIcon" />,
+    // Book
+    <BookIcon key="BookIcon" />,
+    <BookFillIcon key="BookFillIcon" />,
     // Bookmark
     <BookmarkIcon key="BookmarkIcon" />,
     <BookmarkFillIcon key="BookmarkFillIcon" />,
@@ -279,6 +318,8 @@ export const ICONS: JSX.Element[] = [
     <BriefcaseFillIcon key="BriefcaseFillIcon" />,
     // Building
     <BuildingIcon key="BuildingIcon" />,
+    // Button
+    <ButtonIcon key="ButtonIcon" />,
     // Calendar
     <CalendarIcon key="CalendarIcon" />,
     <CalendarFillIcon key="CalendarFillIcon" />,
@@ -299,6 +340,9 @@ export const ICONS: JSX.Element[] = [
     <CameraFillIcon key="CameraFillIcon" />,
     // Car
     <CarIcon key="CarIcon" />,
+    // Cards Stacked
+    <CardsStackedIcon key="CardsStackedIcon" />,
+    <CardsStackedFillIcon key="CardsStackedFillIcon" />,
     // Caret
     <CaretLeftIcon key="CaretLeftIcon" />,
     <CaretRightIcon key="CaretRightIcon" />,
@@ -322,6 +366,8 @@ export const ICONS: JSX.Element[] = [
     // Circle
     <CircleIcon key="CircleIcon" />,
     <CircleDotIcon key="CircleDotIcon" />,
+    // Clear Formatting
+    <ClearFormattingIcon key="ClearFormattingIcon" />,
     // Clock
     <ClockIcon key="ClockIcon" />,
     <ClockFillIcon key="ClockFillIcon" />,
@@ -350,6 +396,8 @@ export const ICONS: JSX.Element[] = [
     <DocPencilFillIcon key="DocPencilFillIcon" />,
     // Dollar
     <DollarIcon key="DollarIcon" />,
+    <DollarRectangleIcon key="DollarRectangleIcon" />,
+    <DollarRectangleFillIcon key="DollarRectangleFillIcon" />,
     // DragHandle
     <DragHandleIcon key="DragHandleIcon" />,
     // Ellipsis
@@ -374,6 +422,8 @@ export const ICONS: JSX.Element[] = [
     <EyeFillIcon key="EyeFillIcon" />,
     <EyeSlashIcon key="EyeSlashIcon" />,
     <EyeSlashFillIcon key="EyeSlashFillIcon" />,
+    // Fill
+    <FillIcon key="FillIcon" />,
     // Filter
     <FilterIcon key="FilterIcon" />,
     // Flag
@@ -382,6 +432,9 @@ export const ICONS: JSX.Element[] = [
     // FloorPlan
     <FloorPlanIcon key="FloorPlanIcon" />,
     <FloorPlanFillIcon key="FloorPlanFillIcon" />,
+    // Folder
+    <FolderIcon key="FolderIcon" />,
+    <FolderFillIcon key="FolderFillIcon" />,
     // Full Screen
     <FullscreenOpenIcon key="FullscreenOpenIcon" />,
     <FullscreenCloseIcon key="FullscreenCloseIcon" />,
@@ -405,6 +458,9 @@ export const ICONS: JSX.Element[] = [
     // Id Card
     <IdCardIcon key="IdCardIcon" />,
     <IdCardFillIcon key="IdCardFillIcon" />,
+    // Image
+    <ImageIcon key="ImageIcon" />,
+    <ImageFillIcon key="ImageFillIcon" />,
     // Inbox
     <InboxIcon key="InboxIcon" />,
     <InboxFillIcon key="InboxFillIcon" />,
@@ -415,6 +471,8 @@ export const ICONS: JSX.Element[] = [
     <LightbulbFillIcon key="LightbulbFillIcon" />,
     // List
     <ListIcon key="ListIcon" />,
+    <ListSquareIcon key="ListSquareIcon" />,
+    <ListSquareFillIcon key="ListSquareFillIcon" />,
     // Lock
     <LockIcon key="LockIcon" />,
     <LockFillIcon key="LockFillIcon" />,
@@ -433,6 +491,9 @@ export const ICONS: JSX.Element[] = [
     // Map
     <MapIcon key="MapIcon" />,
     <MapFillIcon key="MapFillIcon" />,
+    // Medical Box
+    <MedicalBoxIcon key="MedicalBoxIcon" />,
+    <MedicalBoxFillIcon key="MedicalBoxFillIcon" />,
     // Menu
     <MenuIcon key="MenuIcon" />,
     // Merge
@@ -446,11 +507,18 @@ export const ICONS: JSX.Element[] = [
     // Multi Chevron
     <MultiChevronDownUpIcon key="MultiChevronDownUpIcon" />,
     <MultiChevronUpDownIcon key="MultiChevronUpDownIcon" />,
+    <MultiChevronUpDownSquareIcon key="MultiChevronUpDownSquareIcon" />,
+    <MultiChevronUpDownSquareFillIcon key="MultiChevronUpDownSquareFillIcon" />,
     // Navigation
     <NavigationIcon key="NavigationIcon" />,
     <NavigationFillIcon key="NavigationFillIcon" />,
     // NonRecurring
     <NonRecurringIcon key="NonRecurringIcon" />,
+    // Noticeboard
+    <NoticeboardIcon key="NoticeboardIcon" />,
+    <NoticeboardFillIcon key="NoticeboardFillIcon" />,
+    // Ordered List
+    <OrderedListIcon key="OrderedListIcon" />,
     // Pencil
     <PencilIcon key="PencilIcon" />,
     <PencilFillIcon key="PencilFillIcon" />,
@@ -502,6 +570,8 @@ export const ICONS: JSX.Element[] = [
     <ReadMoreIcon key="ReadMoreIcon" />,
     // Recurring
     <RecurringIcon key="RecurringIcon" />,
+    // Redo
+    <RedoIcon key="RedoIcon" />,
     // Refresh
     <RefreshIcon key="RefreshIcon" />,
     // Replay
@@ -515,6 +585,8 @@ export const ICONS: JSX.Element[] = [
     // Sort
     <SortDescendingIcon key="SortDescendingIcon" />,
     <SortAscendingIcon key="SortAscendingIcon" />,
+    // Sparkle
+    <SparkleIcon key="SparkleIcon" />,
     // Star
     <StarIcon key="StarIcon" />,
     <StarHalfIcon key="StarHalfIcon" />,
@@ -529,6 +601,16 @@ export const ICONS: JSX.Element[] = [
     <SquareTickFillIcon key="SquareTickFillIcon" />,
     <Square2x2Icon key="Square2x2Icon" />,
     <Square2x2FillIcon key="Square2x2FillIcon" />,
+    // Table
+    <TableIcon key="TableIcon" />,
+    // Table Add
+    <TableAddLeftColumnIcon key="TableAddLeftColumnIcon" />,
+    <TableAddRightColumnIcon key="TableAddRightColumnIcon" />,
+    <TableAddRowAboveIcon key="TableAddRowAboveIcon" />,
+    <TableAddRowBelowIcon key="TableAddRowBelowIcon" />,
+    // Table Remove
+    <TableRemoveColumnIcon key="TableRemoveColumnIcon" />,
+    <TableRemoveRowIcon key="TableRemoveRowIcon" />,
     //Tablet
     <TabletIcon key="TabletIcon" />,
     <TabletFillIcon key="TabletFillIcon" />,
@@ -555,6 +637,10 @@ export const ICONS: JSX.Element[] = [
     // Triangle
     <TriangleForwardIcon key="TriangleForwardIcon" />,
     <TriangleForwardFillIcon key="TriangleForwardFillIcon" />,
+    // Undo
+    <UndoIcon key="UndoIcon" />,
+    // Unlink
+    <UnlinkIcon key="UnlinkIcon" />,
     // Upload
     <UploadIcon key="UploadIcon" />,
 ];
