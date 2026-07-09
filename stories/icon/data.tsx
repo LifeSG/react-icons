@@ -77,6 +77,7 @@ import {
     ClearFormattingIcon,
     ClockFillIcon,
     ClockIcon,
+    ClockRotateLeftIcon,
     CloudArrowDownFillIcon,
     CloudArrowDownIcon,
     CloudArrowUpFillIcon,
@@ -85,6 +86,8 @@ import {
     CloudIcon,
     CloudTickFillIcon,
     CloudTickIcon,
+    CommentLinesFillIcon,
+    CommentLinesIcon,
     CopyFillIcon,
     CopyIcon,
     CrossCircleFillIcon,
@@ -146,6 +149,7 @@ import {
     LightbulbFillIcon,
     LightbulbIcon,
     LinkIcon,
+    LinkSlashIcon,
     ListIcon,
     ListSquareFillIcon,
     ListSquareIcon,
@@ -247,6 +251,8 @@ import {
     TableRemoveRowIcon,
     TabletFillIcon,
     TabletIcon,
+    TextCompareFillIcon,
+    TextCompareIcon,
     TextFillIcon,
     TextIcon,
     ThumbDownFillIcon,
@@ -265,7 +271,6 @@ import {
     TriangleForwardFillIcon,
     TriangleForwardIcon,
     UndoIcon,
-    UnlinkIcon,
     UploadIcon,
 } from "../../src";
 
@@ -371,6 +376,7 @@ export const ICONS: JSX.Element[] = [
     // Clock
     <ClockIcon key="ClockIcon" />,
     <ClockFillIcon key="ClockFillIcon" />,
+    <ClockRotateLeftIcon key="ClockRotateLeftIcon" />,
     // Cloud
     <CloudIcon key="CloudIcon" />,
     <CloudFillIcon key="CloudFillIcon" />,
@@ -380,6 +386,9 @@ export const ICONS: JSX.Element[] = [
     <CloudArrowDownFillIcon key="CloudArrowDownFillIcon" />,
     <CloudTickIcon key="CloudTickIcon" />,
     <CloudTickFillIcon key="CloudTickFillIcon" />,
+    // Comment Lines
+    <CommentLinesIcon key="CommentLinesIcon" />,
+    <CommentLinesFillIcon key="CommentLinesFillIcon" />,
     // Copy
     <CopyIcon key="CopyIcon" />,
     <CopyFillIcon key="CopyFillIcon" />,
@@ -480,6 +489,7 @@ export const ICONS: JSX.Element[] = [
     <LockOpenFillIcon key="LockOpenFillIcon" />,
     // Link
     <LinkIcon key="LinkIcon" />,
+    <LinkSlashIcon key="LinkSlashIcon" />,
     // Login
     <LoginIcon key="LoginIcon" />,
     // Logout
@@ -617,6 +627,9 @@ export const ICONS: JSX.Element[] = [
     // Text
     <TextIcon key="TextIcon" />,
     <TextFillIcon key="TextFillIcon" />,
+    // Text Compare
+    <TextCompareIcon key="TextCompareIcon" />,
+    <TextCompareFillIcon key="TextCompareFillIcon" />,
     // ThumbUp
     <ThumbDownIcon key="ThumbDownIcon" />,
     <ThumbDownFillIcon key="ThumbDownFillIcon" />,
@@ -639,8 +652,6 @@ export const ICONS: JSX.Element[] = [
     <TriangleForwardFillIcon key="TriangleForwardFillIcon" />,
     // Undo
     <UndoIcon key="UndoIcon" />,
-    // Unlink
-    <UnlinkIcon key="UnlinkIcon" />,
     // Upload
     <UploadIcon key="UploadIcon" />,
 ];
