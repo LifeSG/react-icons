@@ -1,6 +1,6 @@
 # GitHub Workflow for LifeSG libs
 
-This guide will briefly explain what how the GitHub workflow works for LifeSG and the necessary setups to get it working on another LifeSG GitHub repository.
+This guide will briefly explain how the GitHub workflow works for LifeSG and the necessary setups to get it working on another LifeSG GitHub repository.
 
 ## trigger-gitlab-pipeline.yml
 
@@ -10,7 +10,7 @@ This file is responsible for the job that triggers the GitLab pipeline.
 
 This file is responsible for running test and build checks on pull requests.
 
---
+---
 
 ## Trigger Pipeline Job
 
@@ -51,4 +51,4 @@ Pull Request events that will trigger the pipeline are:
 -   `synchronize`: when a new commit is added to the PR
 -   `reopened`: when reopening of a PR
 
-The GitHub action is marked as successful when all check pass.
+The GitHub action is marked as successful when all checks pass.
