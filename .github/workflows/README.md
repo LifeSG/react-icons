@@ -1,22 +1,20 @@
 # GitHub Workflow for LifeSG libs
 
-This guide will breifly explain what how the GitHub workflow works for LifeSG and the necessary setups to get it working on another LifeSG GitHub repository.
+This guide will briefly explain how the GitHub workflow works for LifeSG and the necessary setups to get it working on another LifeSG GitHub repository.
 
-## <u>trigger-gitlab-pipeline.yml</u>
+## trigger-gitlab-pipeline.yml
 
-This file is responsible for creating the GitHub workflow and the job that triggers the GitLab pipeline.
+This file is responsible for the job that triggers the GitLab pipeline.
 
---
+## pr-checks.yml
 
-## <u>Trigger Pipeline Job</u>
+This file is responsible for running test and build checks on pull requests.
 
-When a GitHub `push on master branch` or `pull request` is made it will trigger the job.
+---
 
-Pull Request events that will trigger the pipeline are:
+## Trigger Pipeline Job
 
--   `opened`: when opening of a PR
--   `synchronize`: when a new commit is added to the PR
--   `reopened`: when reopening of a PR
+When a GitHub `push on master branch` is made it will trigger the job.
 
 We have set variables in the settings of the GitHub repository that is needed to be passed into the trigger pipeline API.
 
@@ -42,3 +40,15 @@ The API contains variables that are important to be passed in the body of the re
 Then the Project in GitLab responsible for running the pipeline will create and start the pipeline.
 
 The GitHub action is marked as successful when the GitLab pipeline's `build-dist-job` is successful. After that you are able to deploy to storybook/github/npm.
+
+## PR Checks
+
+When a GitHub `pull request` is made it will trigger the job.
+
+Pull Request events that will trigger the pipeline are:
+
+-   `opened`: when opening of a PR
+-   `synchronize`: when a new commit is added to the PR
+-   `reopened`: when reopening of a PR
+
+The GitHub action is marked as successful when all checks pass.
