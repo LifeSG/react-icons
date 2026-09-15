@@ -51,7 +51,7 @@ async function transformToJSX(file) {
 // =============================================================================
 // RUNNABLE
 // =============================================================================
-async function deleteFiles() {
+async function deleteComponentFiles() {
     const files = await readdir(destinationPath);
 
     for (const file of files) {
@@ -62,8 +62,29 @@ async function deleteFiles() {
     console.log(`Deleted ${files.length} files`);
 }
 
+async function getSvgFiles() {
+    const files = await readdir(assetPath);
+    const componentFiles = files.filter((file) => file !== "index.ts");
+
+    // Validate file names are in the correct format
+    for (const file of componentFiles) {
+        const fileNameParts = file.split(".");
+        if (
+            fileNameParts.length !== 2 ||
+            !/^[a-z][a-z0-9]*(-[a-z0-9]+)*$/.test(fileNameParts[0]) ||
+            fileNameParts[1] !== "svg"
+        ) {
+            throw new Error(
+                `Invalid file name: ${file}. SVG files should be in kebab case`
+            );
+        }
+    }
+
+    return componentFiles;
+}
+
 async function writeComponentFiles() {
-    const svgFiles = await readdir(assetPath);
+    const svgFiles = await getSvgFiles();
 
     for (const file of svgFiles) {
         const jsxCode = await transformToJSX(file);
@@ -100,7 +121,7 @@ async function generateIndexFile() {
 
 async function run() {
     try {
-        await deleteFiles();
+        await deleteComponentFiles();
         await writeComponentFiles();
         await generateIndexFile();
     } catch (err) {
