@@ -1,4 +1,4 @@
-const { readdirSync } = require("fs-extra");
+import { readdirSync } from "node:fs";
 
 export function getFiles(dir) {
     const files = readdirSync(dir);
