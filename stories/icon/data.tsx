@@ -75,6 +75,7 @@ import {
     CircleDotIcon,
     CircleIcon,
     ClearFormattingIcon,
+    ClipboardClockIcon,
     ClockFillIcon,
     ClockIcon,
     ClockRotateLeftIcon,
@@ -187,6 +188,8 @@ import {
     PencilIcon,
     PencilStrokeFillIcon,
     PencilStrokeIcon,
+    PercentWavyCircleFillIcon,
+    PercentWavyCircleIcon,
     Person2FillIcon,
     Person2Icon,
     Person2MinusFillIcon,
@@ -228,6 +231,7 @@ import {
     RetryIcon,
     ReturnIcon,
     ShareIcon,
+    SoccerBallIcon,
     SortAscendingIcon,
     SortDescendingIcon,
     SparkleIcon,
@@ -235,6 +239,8 @@ import {
     SpeakerIcon,
     Square2x2FillIcon,
     Square2x2Icon,
+    Square2x2PlusFillIcon,
+    Square2x2PlusIcon,
     SquareFillIcon,
     SquareIcon,
     SquareTickFillIcon,
@@ -373,6 +379,8 @@ export const ICONS: JSX.Element[] = [
     <CircleDotIcon key="CircleDotIcon" />,
     // Clear Formatting
     <ClearFormattingIcon key="ClearFormattingIcon" />,
+    // Clipboard
+    <ClipboardClockIcon key="ClipboardClockIcon" />,
     // Clock
     <ClockIcon key="ClockIcon" />,
     <ClockFillIcon key="ClockFillIcon" />,
@@ -534,6 +542,9 @@ export const ICONS: JSX.Element[] = [
     <PencilFillIcon key="PencilFillIcon" />,
     <PencilStrokeIcon key="PencilStrokeIcon" />,
     <PencilStrokeFillIcon key="PencilStrokeFillIcon" />,
+    // Percent Wavy Circle
+    <PercentWavyCircleIcon key="PercentWavyCircleIcon" />,
+    <PercentWavyCircleFillIcon key="PercentWavyCircleFillIcon" />,
     // Person
     <PersonIcon key="PersonIcon" />,
     <PersonFillIcon key="PersonFillIcon" />,
@@ -592,6 +603,8 @@ export const ICONS: JSX.Element[] = [
     <ReturnIcon key="ReturnIcon" />,
     // Share
     <ShareIcon key="ShareIcon" />,
+    // Soccer Ball
+    <SoccerBallIcon key="SoccerBallIcon" />,
     // Sort
     <SortDescendingIcon key="SortDescendingIcon" />,
     <SortAscendingIcon key="SortAscendingIcon" />,
@@ -611,6 +624,8 @@ export const ICONS: JSX.Element[] = [
     <SquareTickFillIcon key="SquareTickFillIcon" />,
     <Square2x2Icon key="Square2x2Icon" />,
     <Square2x2FillIcon key="Square2x2FillIcon" />,
+    <Square2x2PlusIcon key="Square2x2PlusIcon" />,
+    <Square2x2PlusFillIcon key="Square2x2PlusFillIcon" />,
     // Table
     <TableIcon key="TableIcon" />,
     // Table Add
