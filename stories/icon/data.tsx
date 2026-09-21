@@ -94,6 +94,8 @@ import {
     CrossCircleFillIcon,
     CrossCircleIcon,
     CrossIcon,
+    DesktopFillIcon,
+    DesktopIcon,
     DocFillIcon,
     DocIcon,
     DocPencilFillIcon,
@@ -174,6 +176,8 @@ import {
     MinusIcon,
     MinusSquareFillIcon,
     MinusSquareIcon,
+    MobileFillIcon,
+    MobileIcon,
     MultiChevronDownUpIcon,
     MultiChevronUpDownIcon,
     MultiChevronUpDownSquareFillIcon,
@@ -257,6 +261,8 @@ import {
     TableRemoveRowIcon,
     TabletFillIcon,
     TabletIcon,
+    TabletVerticalFillIcon,
+    TabletVerticalIcon,
     TextCompareFillIcon,
     TextCompareIcon,
     TextFillIcon,
@@ -404,6 +410,9 @@ export const ICONS: JSX.Element[] = [
     <CrossIcon key="CrossIcon" />,
     <CrossCircleIcon key="CrossCircleIcon" />,
     <CrossCircleFillIcon key="CrossCircleFillIcon" />,
+    // Desktop
+    <DesktopIcon key="DesktopIcon" />,
+    <DesktopFillIcon key="DesktopFillIcon" />,
     // Download
     <DownloadIcon key="DownloadIcon" />,
     // Doc
@@ -522,6 +531,9 @@ export const ICONS: JSX.Element[] = [
     <MinusCircleFillIcon key="MinusCircleFillIcon" />,
     <MinusSquareIcon key="MinusSquareIcon" />,
     <MinusSquareFillIcon key="MinusSquareFillIcon" />,
+    // Mobile
+    <MobileIcon key="MobileIcon" />,
+    <MobileFillIcon key="MobileFillIcon" />,
     // Multi Chevron
     <MultiChevronDownUpIcon key="MultiChevronDownUpIcon" />,
     <MultiChevronUpDownIcon key="MultiChevronUpDownIcon" />,
@@ -639,6 +651,9 @@ export const ICONS: JSX.Element[] = [
     //Tablet
     <TabletIcon key="TabletIcon" />,
     <TabletFillIcon key="TabletFillIcon" />,
+    // Tablet Vertical
+    <TabletVerticalIcon key="TabletVerticalIcon" />,
+    <TabletVerticalFillIcon key="TabletVerticalFillIcon" />,
     // Text
     <TextIcon key="TextIcon" />,
     <TextFillIcon key="TextFillIcon" />,
