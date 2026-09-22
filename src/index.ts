@@ -236,6 +236,7 @@ export * from "./refresh";
 export * from "./replay";
 export * from "./retry";
 export * from "./return";
+export * from "./scan-link";
 export * from "./share";
 export * from "./soccer-ball";
 export * from "./sort-ascending";
