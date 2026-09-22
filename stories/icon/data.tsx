@@ -234,6 +234,7 @@ import {
     ReplayIcon,
     RetryIcon,
     ReturnIcon,
+    ScanLinkIcon,
     ShareIcon,
     SoccerBallIcon,
     SortAscendingIcon,
@@ -613,6 +614,8 @@ export const ICONS: JSX.Element[] = [
     <RetryIcon key="RetryIcon" />,
     // Return
     <ReturnIcon key="ReturnIcon" />,
+    // Scan Link
+    <ScanLinkIcon key="ScanLinkIcon" />,
     // Share
     <ShareIcon key="ShareIcon" />,
     // Soccer Ball
